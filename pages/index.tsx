@@ -1,8 +1,7 @@
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
-import { Hero } from '../components/home';
+import { Hero, Positions } from '../components/home';
 import strings from "../constants/strings";
-import styles from '../styles/Home.module.css';
 
 export default function Home(props: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -13,6 +12,8 @@ export default function Home(props: InferGetStaticPropsType<typeof getStaticProp
       </Head>
 
       <Hero {...props} />
+
+      <Positions {...props} />
 
     </div>
   );
