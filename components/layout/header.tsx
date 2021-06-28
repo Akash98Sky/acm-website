@@ -1,29 +1,40 @@
-import { Component } from "react";
+import { MouseEventHandler, useState } from "react";
 
-export default class Header extends Component {
-    render() {
-        return (
-            <header className="text-gray-600 body-font">
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                        <span className="ml-3 text-xl">Tailblocks</span>
-                    </a>
-                    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                        <a className="mr-5 hover:text-gray-900">First Link</a>
-                        <a className="mr-5 hover:text-gray-900">Second Link</a>
-                        <a className="mr-5 hover:text-gray-900">Third Link</a>
-                        <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-                    </nav>
-                    <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                    </button>
+export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleMenuClick: MouseEventHandler<HTMLButtonElement> = (event) => {
+        event.preventDefault();
+
+        setMenuOpen(!menuOpen);
+    };
+
+
+    return (
+        <nav className="bg-white shadow dark:bg-gray-800">
+            <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+                <div className="flex items-center justify-between">
+                    <div>
+                        <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">A.C.M.</a>
+                    </div>
+
+                    <div className="flex md:hidden">
+                        <button type="button" onClick={handleMenuClick} className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
+                                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-            </header>
-        );
-    }
+
+                <div className="items-center md:flex" hidden={!menuOpen}>
+                    <div className="flex flex-col md:flex-row md:mx-6">
+                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="/journals">Journals</a>
+                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="/papers">Papers</a>
+                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
 }
