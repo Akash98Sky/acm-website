@@ -8,7 +8,8 @@ function App({ Component, pageProps }: AppProps) {
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" /> */}
+        <link rel="icon" href="/favicon.ico" />
+        <title>ACM</title>
       </Head>
       <AppLayout>
         <Component {...pageProps} />

@@ -1,6 +1,8 @@
+import LinkOr from '../linkOr';
+
 interface ResearchInterestsProps {
     research: {
-        interests: { name: string, bg: string; }[];
+        interests: { name: string, bg: string, url: string | undefined; }[];
     };
 }
 
@@ -36,16 +38,20 @@ export default function ResearchInterests(props: ResearchInterestsProps) {
                     </span>
                 </h2>
             </div>
-            <div className="grid grid-cols-2 gap-5 row-gap-6 mb-10 sm:grid-cols-3 lg:grid-cols-6">
+            <div className="grid grid-cols-2 gap-5 row-gap-6 mb-10 sm:grid-cols-3 lg:grid-cols-5">
                 {
                     props.research.interests.map(interest => {
                         return (
-                            <div className="text-center" key={interest.name}>
-                                <div className="relative flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full sm:w-24 sm:h-24">
-                                    <img className="inline-block h-full w-full rounded-full text-white border-2 border-white object-cover object-center" src={interest.bg} alt="" />
-                                    <div className="absolute rounded-full inset-0 bg-gray-600 bg-opacity-30" />
-                                </div>
-                                <h6 className="mb-2 font-semibold leading-5">{interest.name}</h6>
+                            <div className="py-4 md:p-8" key={interest.name}>
+                                <LinkOr href={interest.url}>
+                                    <a className="relative bg-black shadow-lg hover:shadow-md rounded-lg group h-28 w-28 md:h-40 md:w-40 flex justify-center items-center" target="_blank">
+                                        <div className="rounded-lg h-full w-full absolute z-10 bg-cover bg-center opacity-50 hover:opacity-20 transition-all duration-500 ease-in-out" style={{ backgroundImage: `url('${interest.bg}')` }}>
+                                        </div>
+                                        <p className="font-bold text-sm text-white text-center absolute z-20 pointer-events-none">
+                                            {interest.name}
+                                        </p>
+                                    </a>
+                                </LinkOr>
                             </div>
                         );
                     })

@@ -8,7 +8,7 @@ interface PositionsProps {
 export default class Positions extends Component<PositionsProps> {
     buildSection(title: string, sub: string, date: string) {
         return (
-            <div className="grid py-8 sm:grid-cols-4">
+            <div className="grid py-8 sm:grid-cols-4" key={title}>
                 <div className="mb-4 sm:mb-0">
                     <div className="space-y-1 text-s font-semibold tracking-wide uppercase">
                         <p className="text-gray-600">{date}</p>

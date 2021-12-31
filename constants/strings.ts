@@ -55,14 +55,46 @@ const educations: EducationModel[] = [
 
 const research = {
     interests: [
-        { name: 'Natural Language Processing', bg: 'https://insights.daffodilsw.com/hs-fs/hubfs/Archna/Pre-trained%20NLP%20model.png?width=700&name=Pre-trained%20NLP%20model.png' },
-        { name: 'Information Retrieval', bg: 'https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Untitled-design3-2048x1365.png' },
-        { name: 'Sentiment Analysis', bg: 'https://d1sjtleuqoc1be.cloudfront.net/wp-content/uploads/2019/04/25112909/shutterstock_1073953772-860x574.jpg' },
-        { name: 'Opinion Mining', bg: 'https://www.meaningcloud.com/wp-content/uploads/2015/02/176964464-reduced.jpg' },
-        { name: 'Soft Computing', bg: 'https://www.hitechnectar.com/wp-content/uploads/2019/05/Applications-of-Soft-Computing.jpg' },
-        { name: 'Fuzzy Logic', bg: 'https://i1.wp.com/www.infoclusters.com/wp-content/uploads/2019/09/fuzzy.png?resize=768%2C407&ssl=1' },
-        { name: 'Neural Networks', bg: 'https://resources.appen.com/wp-content/uploads/2018/03/Recent-Developments-in-Neural-Networks.png.webp' },
-        { name: 'Big Data Analytics', bg: 'https://itchronicles.com/wp-content/uploads/2020/08/big-data-analysis-1024x576.jpg.webp' }
+        {
+            name: 'Natural Language Processing',
+            bg: 'https://insights.daffodilsw.com/hs-fs/hubfs/Archna/Pre-trained%20NLP%20model.png?width=700&name=Pre-trained%20NLP%20model.png',
+            url: 'https://en.wikipedia.org/wiki/Natural_language_processing',
+        },
+        {
+            name: 'Information Retrieval',
+            bg: 'https://cdn.analyticsvidhya.com/wp-content/uploads/2020/08/Untitled-design3-2048x1365.png',
+            url: 'https://en.wikipedia.org/wiki/information_retreival',
+        },
+        {
+            name: 'Sentiment Analysis',
+            bg: 'https://d1sjtleuqoc1be.cloudfront.net/wp-content/uploads/2019/04/25112909/shutterstock_1073953772-860x574.jpg',
+            url: 'https://en.wikipedia.org/wiki/sentiment_analysis',
+        },
+        {
+            name: 'Opinion Mining',
+            bg: 'https://www.meaningcloud.com/wp-content/uploads/2015/02/176964464-reduced.jpg',
+            url: 'https://en.wikipedia.org/wiki/opinion_mining',
+        },
+        {
+            name: 'Soft Computing',
+            bg: 'https://www.hitechnectar.com/wp-content/uploads/2019/05/Applications-of-Soft-Computing.jpg',
+            url: 'https://en.wikipedia.org/wiki/soft_computing',
+        },
+        {
+            name: 'Fuzzy Logic',
+            bg: 'https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/02/14161027/iStock-1012357038.jpg',
+            url: 'https://en.wikipedia.org/wiki/fuzzy_logic',
+        },
+        {
+            name: 'Neural Networks',
+            bg: 'https://resources.appen.com/wp-content/uploads/2018/03/Recent-Developments-in-Neural-Networks.png.webp',
+            url: 'https://en.wikipedia.org/wiki/neural_networks',
+        },
+        {
+            name: 'Big Data Analytics',
+            bg: 'https://itchronicles.com/wp-content/uploads/2020/08/big-data-analysis-1024x576.jpg.webp',
+            url: 'https://en.wikipedia.org/wiki/big_data_analytics',
+        }
     ],
     scholars: [],
     phd_awardees: []

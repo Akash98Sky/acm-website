@@ -1,38 +1,51 @@
-import { MouseEventHandler, useState } from "react";
+import React, { MouseEventHandler, useState } from "react";
+import Link from 'next/link';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleMenuClick: MouseEventHandler<HTMLButtonElement> = (event) => {
-        event.preventDefault();
-
+    const handleMenuClick: MouseEventHandler<HTMLElement> = (event) => {
         setMenuOpen(!menuOpen);
     };
 
+    const NavButton = (props: { href: string, title: string; }) => (
+        <Link {...props}>
+            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center text-white hover:bg-tertiary hover:text-gray-100 hover:shadow' onClick={handleMenuClick}>
+                {props.title}
+            </a>
+        </Link>
+    );
+
 
     return (
-        <nav className="bg-white shadow dark:bg-gray-800">
-            <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-                <div className="flex items-center justify-between">
-                    <div>
-                        <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">A.C.M.</a>
-                    </div>
-
-                    <div className="flex md:hidden">
-                        <button type="button" onClick={handleMenuClick} className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-                                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <div className="items-center md:flex" hidden={!menuOpen}>
-                    <div className="flex flex-col md:flex-row md:mx-6">
-                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="/journals">Journals</a>
-                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="/papers">Papers</a>
-                        <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#">About</a>
-                    </div>
+        <nav className='flex items-center flex-wrap bg-primary shadow p-3 '>
+            <Link href='/'>
+                <a className="inline-flex items-center p-2 mr-4 text-2xl font-bold text-gray-100 dark:text-white lg:text-3xl hover:text-gray-200">A.C.M.</a>
+            </Link>
+            <button className='inline-flex m-1 p-2 hover:bg-tertiary lg:hidden text-black ml-auto hover:text-black outline-none'
+                onClick={handleMenuClick}
+            >
+                <svg
+                    className='w-6 h-6'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                >
+                    <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M4 6h16M4 12h16M4 18h16'
+                    />
+                </svg>
+            </button>
+            {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+            <div className="w-full lg:inline-flex lg:flex-grow lg:w-auto" hidden={!menuOpen}>
+                <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+                    <NavButton href="/journals" title="Journals" />
+                    <NavButton href="/papers" title="Papers" />
+                    <NavButton href="/about" title="About" />
                 </div>
             </div>
         </nav>
