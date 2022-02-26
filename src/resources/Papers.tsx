@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Datagrid, TextField, TextInput, Create, SimpleForm, Edit, DateField, EditButton, DateTimeInput } from 'react-admin';
+import { List, Datagrid, TextField, TextInput, Create, SimpleForm, Edit, DateField, EditButton, DateTimeInput, ArrayInput, SimpleFormIterator } from 'react-admin';
 
 export function PaperList(props: any) {
     return (
@@ -9,7 +9,7 @@ export function PaperList(props: any) {
                 <TextField source="title" />
                 <TextField source="subTitle" />
                 <TextField source="url" />
-                <DateField label="Last Update" source="lastupdate" />
+                <DateField source="publishedOn" />
                 <EditButton />
             </Datagrid>
         </List>
@@ -22,8 +22,14 @@ export function PaperCreate(props: any) {
             <SimpleForm>
                 <TextInput source="title" />
                 <TextInput source="subTitle" />
+                <ArrayInput source="authors">
+                    <SimpleFormIterator getItemLabel={(index) => `Author ${index + 1}.`}>
+                        <TextInput label="Name" source="name" />
+                        <TextInput label="ID" source="id" />
+                    </SimpleFormIterator>
+                </ArrayInput>
                 <TextInput source="url" />
-                <DateTimeInput label="Last Update" source="lastupdate" />
+                <DateTimeInput source="publishedOn" />
             </SimpleForm>
         </Create>
     );
@@ -36,8 +42,15 @@ export function PaperEdit(props: any) {
                 <TextInput disabled label="Id" source="id" />
                 <TextInput source="title" />
                 <TextInput source="subTitle" />
+                <ArrayInput source="authors">
+                    <SimpleFormIterator getItemLabel={(index) => `Author ${index + 1}.`}>
+                        <TextInput label="Name" source="name" />
+                        <TextInput label="ID" source="id" />
+                    </SimpleFormIterator>
+                </ArrayInput>
                 <TextInput source="url" />
-                <DateTimeInput label="Last Update" source="lastupdate" />
+                <DateTimeInput source="publishedOn" />
+                <DateTimeInput disabled label="Last Update" source="lastupdate" />
             </SimpleForm>
         </Edit>
     );

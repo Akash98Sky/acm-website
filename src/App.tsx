@@ -7,7 +7,7 @@ import { PaperCreate, PaperEdit, PaperList } from './resources/Papers';
 function App() {
     return (
         <Admin dataProvider={dataProvider} authProvider={authProvider}>
-            <Resource name="papers" options={{ label: "Research Papers" }} list={PaperList} create={PaperCreate} edit={PaperEdit} />
+            <Resource name="papers" options={{ label: "Conference Papers" }} list={PaperList} create={PaperCreate} edit={PaperEdit} />
             <Resource name="journals" options={{ label: "Journals" }} list={JournalList} create={JournalCreate} edit={JournalEdit} />
         </Admin>
     );
