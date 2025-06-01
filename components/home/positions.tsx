@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { EducationModel } from '../../models/info_models';
+import Link from 'next/link';
 
 interface PositionsProps {
     educations: EducationModel[];
@@ -16,7 +17,7 @@ export default class Positions extends Component<PositionsProps> {
                 </div>
                 <div className="sm:col-span-3 lg:col-span-2">
                     <div className="mb-3">
-                        <a
+                        <Link
                             href="/"
                             aria-label="Article"
                             className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -24,7 +25,7 @@ export default class Positions extends Component<PositionsProps> {
                             <p className="text-xl font-extrabold leading-none sm:text-2xl xl:text-2xl">
                                 {title}
                             </p>
-                        </a>
+                        </Link> 
                     </div>
                     <p className="text-gray-700">
                         {sub}

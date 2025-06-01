@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LinkOr from '../linkOr';
 
 interface ResearchInterestsProps {
@@ -44,13 +45,13 @@ export default function ResearchInterests(props: ResearchInterestsProps) {
                         return (
                             <div className="py-4 md:p-8" key={interest.name}>
                                 <LinkOr href={interest.url}>
-                                    <a className="relative bg-black shadow-lg hover:shadow-md rounded-lg group h-28 w-28 md:h-40 md:w-40 flex justify-center items-center" target="_blank">
+                                    <Link href="#" className="relative bg-black shadow-lg hover:shadow-md rounded-lg group h-28 w-28 md:h-40 md:w-40 flex justify-center items-center" target="_blank">
                                         <div className="rounded-lg h-full w-full absolute z-10 bg-cover bg-center opacity-50 hover:opacity-20 transition-all duration-500 ease-in-out" style={{ backgroundImage: `url('${interest.bg}')` }}>
                                         </div>
                                         <p className="font-bold text-sm text-white text-center absolute z-20 pointer-events-none">
                                             {interest.name}
                                         </p>
-                                    </a>
+                                    </Link> 
                                 </LinkOr>
                             </div>
                         );

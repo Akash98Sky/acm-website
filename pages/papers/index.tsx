@@ -4,13 +4,14 @@ import React from 'react';
 import LinkOr from '../../components/linkOr';
 import { server } from '../../configs';
 import { PaperModel } from '../../models/paper_model';
+import Link from 'next/link';
 
 export default function Papers(props: { papers: PaperModel[]; }) {
     const PaperItem = (props: { paper: PaperModel; }) => {
         return (
             <li>
                 <LinkOr href={props.paper.url}>
-                    <a className="block hover:bg-hover-100" target="_blank">
+                    <Link href="#" className="block hover:bg-hover-100" target="_blank">
                         <div className="container mx-auto px-4 py-4 sm:px-6">
                             <div className="flex items-center justify-between">
                                 <p className="text-sm md:text-base text-gray-700 text-justify">
@@ -25,7 +26,7 @@ export default function Papers(props: { papers: PaperModel[]; }) {
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </Link> 
                 </LinkOr>
             </li>
         );
