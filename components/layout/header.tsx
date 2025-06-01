@@ -9,19 +9,15 @@ export default function Header() {
     };
 
     const NavButton = (props: { href: string, title: string; }) => (
-        <Link {...props}>
-            <Link href="#" className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center text-white hover:bg-tertiary hover:text-gray-100 hover:shadow' onClick={handleMenuClick}>
-                {props.title}
-            </Link> 
+        <Link {...props} className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center text-white hover:bg-tertiary hover:text-gray-100 hover:shadow' onClick={handleMenuClick}>
+            {props.title}
         </Link>
     );
 
 
     return (
         <nav className='flex items-center flex-wrap bg-primary shadow p-3 '>
-            <Link href='/'>
-                <Link href="#" className="inline-flex items-center p-2 mr-4 text-2xl font-bold text-gray-100 dark:text-white lg:text-3xl hover:text-gray-200">A.C.M.</Link> 
-            </Link>
+            <Link href='/' className="inline-flex items-center p-2 mr-4 text-2xl font-bold text-gray-100 dark:text-white lg:text-3xl hover:text-gray-200">A.C.M.</Link>
             <button className='inline-flex m-1 p-2 hover:bg-tertiary lg:hidden text-black ml-auto hover:text-black outline-none'
                 onClick={handleMenuClick}
             >
