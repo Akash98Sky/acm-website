@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "runtimeExecutable": "custom",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--headless"
+      ],
+      "request": "launch",
+      "name": "Launch Brave (Headless)",
+      "url": "https://localhost:3000"
+    }
+  ]
+}
