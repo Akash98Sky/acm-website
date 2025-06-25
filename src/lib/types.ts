@@ -53,6 +53,7 @@ export interface Publication {
   publishedIn?: string;
   image?: string;
   imageHint?: string;
+  category?: string;
 }
 
 export interface Project {

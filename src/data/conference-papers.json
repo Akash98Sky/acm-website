@@ -7,7 +7,8 @@
     "year": 2023,
     "url": "#",
     "image": "https://placehold.co/600x400.png",
-    "imageHint": "natural language"
+    "imageHint": "natural language",
+    "category": "Computer Science"
   },
   {
     "title": "Dynamic Context-Aware Attention for Abstractive Summarization",
@@ -16,7 +17,8 @@
     "year": 2022,
     "url": "#",
     "image": "https://placehold.co/600x400.png",
-    "imageHint": "abstractive summarization"
+    "imageHint": "abstractive summarization",
+    "category": "Computer Science"
   },
   {
     "title": "Learning Phonetic Representations from Raw Audio using Self-Supervision",
@@ -25,6 +27,7 @@
     "year": 2020,
     "url": "#",
     "image": "https://placehold.co/600x400.png",
-    "imageHint": "audio waves"
+    "imageHint": "audio waves",
+    "category": "Data Science"
   }
 ]
