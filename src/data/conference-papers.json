@@ -5,20 +5,26 @@
     "authors": ["Evelyn Reed", "Jian Li"],
     "conference": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
     "year": 2023,
-    "url": "#"
+    "url": "#",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "natural language"
   },
   {
     "title": "Dynamic Context-Aware Attention for Abstractive Summarization",
     "authors": ["Evelyn Reed", "David Chen"],
     "conference": "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)",
     "year": 2022,
-    "url": "#"
+    "url": "#",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "abstractive summarization"
   },
   {
     "title": "Learning Phonetic Representations from Raw Audio using Self-Supervision",
     "authors": ["Evelyn Reed", "Sofia Garcia"],
     "conference": "Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
     "year": 2020,
-    "url": "#"
+    "url": "#",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "audio waves"
   }
 ]

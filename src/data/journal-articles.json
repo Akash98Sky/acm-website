@@ -6,7 +6,9 @@
     "journal": "Journal of Artificial Intelligence Research",
     "year": 2023,
     "url": "https://doi.org/10.1613/jair.1.13000",
-    "doi": "10.1613/jair.1.13000"
+    "doi": "10.1613/jair.1.13000",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "creative writing"
   },
   {
     "title": "Cross-Lingual Transfer Learning for Low-Resource Machine Translation",
@@ -14,7 +16,9 @@
     "journal": "Computational Linguistics",
     "year": 2021,
     "url": "https://doi.org/10.1162/coli_a_00400",
-    "doi": "10.1162/coli_a_00400"
+    "doi": "10.1162/coli_a_00400",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "interactive fiction"
   },
   {
     "title": "Modeling Syntactic Structures with Neural Tensor Networks",
@@ -22,6 +26,8 @@
     "journal": "Transactions of the Association for Computational Linguistics",
     "year": 2019,
     "url": "https://doi.org/10.1162/tacl_a_00250",
-    "doi": "10.1162/tacl_a_00250"
+    "doi": "10.1162/tacl_a_00250",
+    "image": "https://placehold.co/600x400.png",
+    "imageHint": "user experience"
   }
 ]
