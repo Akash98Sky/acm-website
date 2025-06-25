@@ -1,39 +1,63 @@
 
 {
   "basics": {
-    "name": "Dr. Evelyn Reed",
-    "label": "Computational Linguist",
+    "name": "Sophia Carter",
+    "label": "Product Designer",
     "image": "https://placehold.co/256x256.png",
-    "summary": "A distinguished computational linguist with over 15 years of experience in natural language processing, machine learning, and AI-driven linguistic analysis. Expert in developing algorithms that power next-generation language technologies."
+    "location": "Based in San Francisco",
+    "summary": "I am a product designer based in San Francisco with a passion for creating user-centered designs. My contact details are available upon request."
   },
-  "work": [
+  "education": [
     {
-      "company": "LexiCore Technologies",
-      "position": "Lead Research Scientist",
-      "startDate": "2015-01-01",
-      "endDate": "Present",
-      "summary": "Lead a team of researchers in developing state-of-the-art NLP models for semantic search and text summarization. Published key findings in top-tier journals and conferences."
+      "degree": "PhD in Design",
+      "institution": "University of Design",
+      "period": "2018-2022"
     },
     {
-      "company": "Synthax AI",
-      "position": "Senior NLP Engineer",
-      "startDate": "2010-06-01",
-      "endDate": "2014-12-31",
-      "summary": "Developed and deployed machine translation systems that improved translation accuracy by 30%. Worked on syntactic parsing and named entity recognition components."
+      "degree": "Master of Arts in Design",
+      "institution": "University of Arts",
+      "period": "2016-2018"
+    },
+    {
+      "degree": "Bachelor of Science in Design",
+      "institution": "University of Science",
+      "period": "2012-2016"
     }
   ],
-  "skills": [
+  "interests": {
+    "title": "Research Interests",
+    "description": "My research interests include user experience design, interaction design, and design thinking."
+  },
+  "awards": [
     {
-      "name": "Natural Language Processing",
-      "keywords": ["NLP", "NLU", "NLG", "Machine Translation", "Text Summarization"]
+      "awardee": "Dr. Emily Clark",
+      "details": "Awarded in 2022"
     },
     {
-      "name": "Machine Learning",
-      "keywords": ["Deep Learning", "Python", "TensorFlow", "PyTorch"]
-    },
-    {
-      "name": "Linguistics",
-      "keywords": ["Computational Linguistics", "Phonetics", "Syntax", "Semantics"]
+      "awardee": "Dr. David Lee",
+      "details": "Awarded in 2021"
     }
-  ]
+  ],
+  "references": [
+    {
+      "name": "James Miller",
+      "details": "Registered in 2023"
+    },
+    {
+      "name": "Ryan Chen",
+      "details": "Registered in 2022"
+    }
+  ],
+  "publications": {
+    "bookChapters": [
+      {
+        "title": "Chapter 1: Design Principles",
+        "details": "Published in Handbook of Design, 2023"
+      },
+      {
+        "title": "Chapter 2: User Research Methods",
+        "details": "Published in Advances in Design, 2022"
+      }
+    ]
+  }
 }

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ACM Portfolio',
-  description: 'A personal portfolio for an academic professional.',
+  title: 'Portfolio | Sophia Carter',
+  description: 'A personal portfolio for a product designer.',
 };
 
 export default function RootLayout({
@@ -13,13 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+    <html lang="en" className="!scroll-smooth">
+      <body className="antialiased">
         {children}
         <Toaster />
       </body>

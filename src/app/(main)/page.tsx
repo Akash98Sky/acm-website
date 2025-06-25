@@ -1,55 +1,151 @@
-import { generateCareerSummary } from '@/ai/flows/generate-career-summary';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import resume from '@/data/resume.json';
-import type { Resume } from '@/lib/types';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-export default async function HomePage() {
-  const resumeData: Resume = resume;
+import type { Resume, Project, Publication } from '@/lib/types';
+import resumeData from '@/data/resume.json';
+import projectsData from '@/data/projects.json';
+import journalArticles from '@/data/journal-articles.json';
+import conferencePapers from '@/data/conference-papers.json';
 
-  let careerSummary = "Could not generate summary.";
-  try {
-    const summaryResult = await generateCareerSummary({
-      resumeData: JSON.stringify(resumeData),
-    });
-    careerSummary = summaryResult.careerSummary;
-  } catch (error) {
-    console.error("Failed to generate career summary:", error);
-  }
 
+const ListItem = ({ primary, secondary }: { primary: string; secondary: string }) => (
+  <div className="flex justify-between items-center py-3 border-b">
+    <p className="text-sm text-foreground/80">{primary}</p>
+    <p className="text-sm text-right text-foreground/60">{secondary}</p>
+  </div>
+);
+
+const Section = ({ title, children }: { title: string, children: React.ReactNode }) => (
+  <section className="space-y-4">
+    <h2 className="text-2xl font-bold">{title}</h2>
+    {children}
+  </section>
+);
+
+export default function HomePage() {
+  const resume: Resume = resumeData;
+  const projects: Project[] = projectsData;
+  const featuredJournal: Publication | undefined = journalArticles[0];
+  const featuredConference: Publication | undefined = conferencePapers[0];
+  const articles: Publication[] = [...journalArticles, ...conferencePapers];
 
   return (
-    <div className="space-y-8">
-      <header>
-        <h1 className="font-headline text-4xl font-bold tracking-tight lg:text-5xl">
-          About Me
-        </h1>
-        <p className="mt-2 text-lg text-muted-foreground">
-          An introduction to my professional journey and expertise.
-        </p>
+    <div className="max-w-4xl mx-auto space-y-12">
+      <header className="flex flex-col items-center text-center space-y-4">
+        <Avatar className="h-28 w-28">
+          <AvatarImage src={resume.basics.image} alt={resume.basics.name} data-ai-hint="woman portrait" />
+          <AvatarFallback>{resume.basics.name.charAt(0)}</AvatarFallback>
+        </Avatar>
+        <div>
+          <h1 className="text-4xl font-bold">{resume.basics.name}</h1>
+          <p className="text-lg text-muted-foreground">{resume.basics.label}</p>
+          <p className="text-sm text-muted-foreground">{resume.basics.location}</p>
+        </div>
       </header>
-      
-      <Card className="shadow-lg">
-        <CardHeader>
-          <CardTitle className="font-headline text-2xl">AI-Powered Career Summary</CardTitle>
-          <CardDescription>A concise overview generated from my resume data.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-base leading-relaxed whitespace-pre-line">
-            {careerSummary}
-          </p>
-        </CardContent>
-      </Card>
 
-      <Card className="shadow-lg">
-        <CardHeader>
-          <CardTitle className="font-headline text-2xl">Biography</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-base leading-relaxed">
-            {resumeData.basics.summary}
-          </p>
-        </CardContent>
-      </Card>
+      <Section title="About Me">
+        <p className="text-foreground/80 leading-relaxed">{resume.basics.summary}</p>
+      </Section>
+
+      <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+        <div className="space-y-6">
+          <Section title="Education">
+            <div>
+              {resume.education.map((edu, i) => (
+                <ListItem key={i} primary={edu.degree} secondary={`${edu.institution}, ${edu.period}`} />
+              ))}
+            </div>
+          </Section>
+          
+          <Section title={resume.interests.title}>
+            <p className="text-sm text-foreground/80">{resume.interests.description}</p>
+          </Section>
+        </div>
+        
+        <div className="space-y-6">
+          <Section title="PhD Awardees">
+            <div>
+              {resume.awards.map((award, i) => (
+                <ListItem key={i} primary={award.awardee} secondary={award.details} />
+              ))}
+            </div>
+          </Section>
+
+          <Section title="PhD Scholars">
+             <div>
+              {resume.references.map((scholar, i) => (
+                <ListItem key={i} primary={scholar.name} secondary={scholar.details} />
+              ))}
+            </div>
+          </Section>
+          
+          <Section title="Book Chapters">
+            <div>
+              {resume.publications.bookChapters.map((chapter, i) => (
+                <ListItem key={i} primary={chapter.title} secondary={chapter.details} />
+              ))}
+            </div>
+          </Section>
+        </div>
+      </div>
+
+      <Section title="Featured">
+        <div className="grid md:grid-cols-2 gap-6">
+          {featuredJournal && (
+            <Card>
+              <CardContent className="p-4">
+                <Image src="https://placehold.co/600x400.png" data-ai-hint="abstract art" alt={featuredJournal.title} width={600} height={400} className="rounded-md mb-4 aspect-[4/3] object-cover" />
+                <h3 className="font-semibold">{featuredJournal.title}</h3>
+                <p className="text-sm text-muted-foreground">Published in Journal of Design Studies</p>
+              </CardContent>
+            </Card>
+          )}
+          {featuredConference && (
+             <Card>
+              <CardContent className="p-4">
+                <Image src="https://placehold.co/600x400.png" data-ai-hint="abstract curve" alt={featuredConference.title} width={600} height={400} className="rounded-md mb-4 aspect-[4/3] object-cover" />
+                <h3 className="font-semibold">{featuredConference.title}</h3>
+                <p className="text-sm text-muted-foreground">Presented at the Interactions Design Conference</p>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+      </Section>
+
+      <Section title="Projects">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {projects.map((project, i) => (
+            <Link href={project.url} key={i}>
+              <Card className="h-full transition-shadow hover:shadow-md">
+                <CardContent className="p-3">
+                  <Image src={project.image} data-ai-hint={project.imageHint} alt={project.title} width={400} height={300} className="rounded-md mb-3 aspect-[4/3] object-cover" />
+                  <h3 className="font-semibold text-sm">{project.title}</h3>
+                  <p className="text-xs text-muted-foreground">{project.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
+      
+      <Section title="Articles">
+         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {articles.slice(0, 4).map((article, i) => (
+             <Link href={article.url} key={i}>
+              <Card className="h-full transition-shadow hover:shadow-md">
+                <CardContent className="p-3">
+                  <Image src={`https://placehold.co/400x300.png`} data-ai-hint={i % 2 === 0 ? "abstract wave" : "shell illustration"} alt={article.title} width={400} height={300} className="rounded-md mb-3 aspect-[4/3] object-cover" />
+                  <h3 className="font-semibold text-sm truncate">{article.title}</h3>
+                  <p className="text-xs text-muted-foreground">Brief description of Article {i + 1}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </Section>
     </div>
   );
 }

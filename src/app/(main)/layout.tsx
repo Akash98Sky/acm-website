@@ -1,5 +1,4 @@
-import { MainSidebar } from '@/components/layout/main-sidebar';
-import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
+import Header from '@/components/layout/header';
 
 export default function MainLayout({
   children,
@@ -7,11 +6,11 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <SidebarProvider>
-      <MainSidebar />
-      <SidebarInset>
-        <div className="p-6 md:p-8 lg:p-10">{children}</div>
-      </SidebarInset>
-    </SidebarProvider>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {children}
+      </main>
+    </div>
   );
 }
