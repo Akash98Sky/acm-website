@@ -1,0 +1,27 @@
+
+[
+  {
+    "title": "A Unified Framework for Zero-Shot Semantic Parsing",
+    "authors": ["Evelyn Reed", "Markus Voss"],
+    "journal": "Journal of Artificial Intelligence Research",
+    "year": 2023,
+    "url": "https://doi.org/10.1613/jair.1.13000",
+    "doi": "10.1613/jair.1.13000"
+  },
+  {
+    "title": "Cross-Lingual Transfer Learning for Low-Resource Machine Translation",
+    "authors": ["Evelyn Reed", "Chen Wei", "Anya Sharma"],
+    "journal": "Computational Linguistics",
+    "year": 2021,
+    "url": "https://doi.org/10.1162/coli_a_00400",
+    "doi": "10.1162/coli_a_00400"
+  },
+  {
+    "title": "Modeling Syntactic Structures with Neural Tensor Networks",
+    "authors": ["Evelyn Reed"],
+    "journal": "Transactions of the Association for Computational Linguistics",
+    "year": 2019,
+    "url": "https://doi.org/10.1162/tacl_a_00250",
+    "doi": "10.1162/tacl_a_00250"
+  }
+]

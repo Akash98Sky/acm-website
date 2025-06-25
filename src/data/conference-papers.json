@@ -1,0 +1,24 @@
+
+[
+  {
+    "title": "Adversarial Training for Robustness in Named Entity Recognition",
+    "authors": ["Evelyn Reed", "Jian Li"],
+    "conference": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
+    "year": 2023,
+    "url": "#"
+  },
+  {
+    "title": "Dynamic Context-Aware Attention for Abstractive Summarization",
+    "authors": ["Evelyn Reed", "David Chen"],
+    "conference": "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "year": 2022,
+    "url": "#"
+  },
+  {
+    "title": "Learning Phonetic Representations from Raw Audio using Self-Supervision",
+    "authors": ["Evelyn Reed", "Sofia Garcia"],
+    "conference": "Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "year": 2020,
+    "url": "#"
+  }
+]
