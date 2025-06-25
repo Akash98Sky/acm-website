@@ -16,7 +16,7 @@ const typedResume: Resume = resume;
 
 const navItems = [
   { label: 'About', href: '/' },
-  { label: 'Journals', href: '/journal-articles' },
+  { label: 'Articles', href: '/journal-articles' },
   { label: 'Contact', href: '/contact' },
 ];
 
