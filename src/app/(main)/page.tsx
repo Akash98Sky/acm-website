@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 import type { Resume, Publication } from '@/lib/types';
@@ -77,16 +77,23 @@ export default function HomePage() {
               ))}
             </div>
           </Section>
-          
-          <Section title="Book Chapters">
-            <div>
-              {resume.publications.bookChapters.map((chapter, i) => (
-                <ListItem key={i} primary={chapter.title} secondary={chapter.details} />
-              ))}
-            </div>
-          </Section>
         </div>
       </div>
+
+      <Section title="Book Chapters">
+        <div className="grid md:grid-cols-2 gap-6">
+          {resume.publications.bookChapters.map((chapter, i) => (
+            <Card key={i} className="h-full flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold leading-tight">{chapter.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <p className="text-sm text-muted-foreground">{chapter.details}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </Section>
 
       <Section title="Featured">
         <div className="grid md:grid-cols-2 gap-6">
