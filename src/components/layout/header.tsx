@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FolderKanban, Menu, Search } from 'lucide-react';
+import { FolderKanban, Menu } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -49,10 +49,6 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="hidden md:inline-flex">
-            <Search className="h-5 w-5" />
-            <span className="sr-only">Search</span>
-          </Button>
           <Avatar className="hidden md:block h-9 w-9">
             <AvatarImage src={typedResume.basics.image} alt={typedResume.basics.name} data-ai-hint="woman portrait" />
             <AvatarFallback>{typedResume.basics.name.charAt(0)}</AvatarFallback>
