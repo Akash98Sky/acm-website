@@ -1,12 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-import type { Resume, Project, Publication } from '@/lib/types';
+import type { Resume, Publication } from '@/lib/types';
 import resumeData from '@/data/resume.json';
-import projectsData from '@/data/projects.json';
 import journalArticles from '@/data/journal-articles.json';
 import conferencePapers from '@/data/conference-papers.json';
 
@@ -27,10 +25,8 @@ const Section = ({ title, children }: { title: string, children: React.ReactNode
 
 export default function HomePage() {
   const resume: Resume = resumeData;
-  const projects: Project[] = projectsData;
   const featuredJournal: Publication | undefined = journalArticles[0];
   const featuredConference: Publication | undefined = conferencePapers[0];
-  const articles: Publication[] = [...journalArticles, ...conferencePapers];
 
   return (
     <div className="max-w-4xl mx-auto space-y-12">
@@ -112,38 +108,6 @@ export default function HomePage() {
               </CardContent>
             </Card>
           )}
-        </div>
-      </Section>
-
-      <Section title="Projects">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {projects.map((project, i) => (
-            <Link href={project.url} key={i}>
-              <Card className="h-full transition-shadow hover:shadow-md">
-                <CardContent className="p-3">
-                  <Image src={project.image} data-ai-hint={project.imageHint} alt={project.title} width={400} height={300} className="rounded-md mb-3 aspect-[4/3] object-cover" />
-                  <h3 className="font-semibold text-sm">{project.title}</h3>
-                  <p className="text-xs text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      </Section>
-      
-      <Section title="Articles">
-         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {articles.slice(0, 4).map((article, i) => (
-             <Link href={article.url} key={i}>
-              <Card className="h-full transition-shadow hover:shadow-md">
-                <CardContent className="p-3">
-                  <Image src={`https://placehold.co/400x300.png`} data-ai-hint={i % 2 === 0 ? "abstract wave" : "shell illustration"} alt={article.title} width={400} height={300} className="rounded-md mb-3 aspect-[4/3] object-cover" />
-                  <h3 className="font-semibold text-sm truncate">{article.title}</h3>
-                  <p className="text-xs text-muted-foreground">Brief description of Article {i + 1}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
         </div>
       </Section>
     </div>

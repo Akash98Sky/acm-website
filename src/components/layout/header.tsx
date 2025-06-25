@@ -16,8 +16,6 @@ const typedResume: Resume = resume;
 
 const navItems = [
   { label: 'About', href: '/' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'Articles', href: '/articles' },
   { label: 'Contact', href: '/contact' },
 ];
 
