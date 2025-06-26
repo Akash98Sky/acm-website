@@ -81,7 +81,7 @@ export default function HomePage() {
           {resume.publications.bookChapters.map((chapter, i) => (
             <Card key={i} className="h-full flex flex-col">
               <CardHeader>
-                <CardTitle className="text-xl font-semibold leading-tight">{chapter.title}</CardTitle>
+                <CardTitle className="text-lg font-semibold leading-tight">{chapter.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground">{chapter.details}</p>
