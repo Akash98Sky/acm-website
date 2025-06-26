@@ -55,7 +55,7 @@ export default function HomePage() {
           <Section title={resume.interests.title}>
             <div className="flex flex-wrap gap-2">
               {resume.interests.description.split(', ').map((interest, i) => (
-                <Badge key={i} variant="secondary">{interest.replace('.', '')}</Badge>
+                <Badge key={i} variant="secondary" className="text-sm">{interest.replace('.', '')}</Badge>
               ))}
             </div>
           </Section>
