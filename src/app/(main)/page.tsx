@@ -1,12 +1,9 @@
-import Image from 'next/image';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-import type { Resume, Publication } from '@/lib/types';
+import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
-import journalArticles from '@/data/journal-articles.json';
-import conferencePapers from '@/data/conference-papers.json';
 
 
 const ListItem = ({ primary, secondary }: { primary: string; secondary: string }) => (
@@ -25,8 +22,6 @@ const Section = ({ title, children }: { title: string, children: React.ReactNode
 
 export default function HomePage() {
   const resume: Resume = resumeData;
-  const featuredJournal: Publication | undefined = journalArticles[0];
-  const featuredConference: Publication | undefined = conferencePapers[0];
 
   return (
     <div className="max-w-4xl mx-auto space-y-12">
@@ -92,29 +87,6 @@ export default function HomePage() {
               </CardContent>
             </Card>
           ))}
-        </div>
-      </Section>
-
-      <Section title="Featured">
-        <div className="grid md:grid-cols-2 gap-6">
-          {featuredJournal && (
-            <Card>
-              <CardContent className="p-4">
-                <Image src="https://placehold.co/600x400.png" data-ai-hint="abstract art" alt={featuredJournal.title} width={600} height={400} className="rounded-md mb-4 aspect-[4/3] object-cover" />
-                <h3 className="font-semibold">{featuredJournal.title}</h3>
-                <p className="text-sm text-muted-foreground">Published in Journal of Design Studies</p>
-              </CardContent>
-            </Card>
-          )}
-          {featuredConference && (
-             <Card>
-              <CardContent className="p-4">
-                <Image src="https://placehold.co/600x400.png" data-ai-hint="abstract curve" alt={featuredConference.title} width={600} height={400} className="rounded-md mb-4 aspect-[4/3] object-cover" />
-                <h3 className="font-semibold">{featuredConference.title}</h3>
-                <p className="text-sm text-muted-foreground">Presented at the Interactions Design Conference</p>
-              </CardContent>
-            </Card>
-          )}
         </div>
       </Section>
     </div>
