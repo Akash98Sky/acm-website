@@ -43,42 +43,38 @@ export default function HomePage() {
       </Section>
 
       <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
-        <div className="space-y-6">
-          <Section title="Education">
-            <div>
-              {resume.education.map((edu, i) => (
-                <ListItem key={i} primary={edu.degree} secondary={`${edu.institution}, ${edu.period}`} />
-              ))}
-            </div>
-          </Section>
-          
-          <Section title={resume.interests.title}>
-            <div className="flex flex-wrap gap-2">
-              {resume.interests.description.split(', ').map((interest, i) => (
-                <Badge key={i} variant="secondary" className="text-sm">{interest.replace('.', '')}</Badge>
-              ))}
-            </div>
-          </Section>
-        </div>
+        <Section title="Education">
+          <div>
+            {resume.education.map((edu, i) => (
+              <ListItem key={i} primary={edu.degree} secondary={`${edu.institution}, ${edu.period}`} />
+            ))}
+          </div>
+        </Section>
         
-        <div className="space-y-6">
-          <Section title="PhD Awardees">
-            <div>
-              {resume.awards.map((award, i) => (
-                <ListItem key={i} primary={award.awardee} secondary={award.details} />
-              ))}
-            </div>
-          </Section>
-
-          <Section title="PhD Scholars">
-             <div>
-              {resume.references.map((scholar, i) => (
-                <ListItem key={i} primary={scholar.name} secondary={scholar.details} />
-              ))}
-            </div>
-          </Section>
-        </div>
+        <Section title={resume.interests.title}>
+          <div className="flex flex-wrap gap-2">
+            {resume.interests.description.split(', ').map((interest, i) => (
+              <Badge key={i} variant="secondary" className="text-base">{interest.replace('.', '')}</Badge>
+            ))}
+          </div>
+        </Section>
       </div>
+
+      <Section title="PhD Awardees">
+        <div>
+          {resume.awards.map((award, i) => (
+            <ListItem key={i} primary={award.awardee} secondary={award.details} />
+          ))}
+        </div>
+      </Section>
+
+      <Section title="PhD Scholars">
+          <div>
+          {resume.references.map((scholar, i) => (
+            <ListItem key={i} primary={scholar.name} secondary={scholar.details} />
+          ))}
+        </div>
+      </Section>
 
       <Section title="Book Chapters">
         <div className="grid md:grid-cols-2 gap-6">
