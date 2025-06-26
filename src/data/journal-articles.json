@@ -1,33 +1,213 @@
 
 [
   {
-    "title": "A Unified Framework for Zero-Shot Semantic Parsing",
-    "authors": ["Evelyn Reed", "Markus Voss"],
-    "journal": "Journal of Artificial Intelligence Research",
-    "year": 2023,
-    "url": "https://doi.org/10.1613/jair.1.13000",
-    "doi": "10.1613/jair.1.13000",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "creative writing"
+    "title": "Multi-Criteria Decision Tree Approach to Classify All rounder in Indian Premier League",
+    "authors": ["Pabitra Kumar Dey", "Dipendra Nath Ghosh", "Abhoy Chand Mondal"],
+    "journal": "International Journal of Advanced Science and Technology (IJAST-SERSC), ISSN: 2005-4238, Vol. 52, pp-93-100",
+    "year": 2012,
+    "url": "http://www.sersc.org/journals/IJAST"
   },
   {
-    "title": "Cross-Lingual Transfer Learning for Low-Resource Machine Translation",
-    "authors": ["Evelyn Reed", "Chen Wei", "Anya Sharma"],
-    "journal": "Computational Linguistics",
-    "year": 2021,
-    "url": "https://doi.org/10.1162/coli_a_00400",
-    "doi": "10.1162/coli_a_00400",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "interactive fiction"
+    "title": "Statistical Based Multi-Criteria Decision Making Analysis for Performance Measurement of Batsmen in Indian Premier League",
+    "authors": ["P.K.Dey", "D.N.Ghosh", "A.C.Mondal"],
+    "journal": "International Journal of Advanced Research in Computer Science (IJARCS), ISSN 0976-5697, Vol. 3 No. 4, pp- 51-57",
+    "year": 2012,
+    "url": "http://www.ijarcs.info"
   },
   {
-    "title": "Modeling Syntactic Structures with Neural Tensor Networks",
-    "authors": ["Evelyn Reed"],
-    "journal": "Transactions of the Association for Computational Linguistics",
-    "year": 2019,
-    "url": "https://doi.org/10.1162/tacl_a_00250",
-    "doi": "10.1162/tacl_a_00250",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "user experience"
+    "title": "A cascaded fuzzy inference system for university non-teaching staff performance appraisal",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mandal"],
+    "journal": "Journal of Information Processing Systems(Koria), Volume 7, Number 4, pp595-612",
+    "year": 2011,
+    "url": "#"
+  },
+  {
+    "title": "A MCDM Approach for Evaluating Bowlers Performance in IPL",
+    "authors": ["Pabitra Kumar Dey", "Dipendra Nath Ghosh", "Abhoy Chand Mondal"],
+    "journal": "Journal of Emerging Trends in Computing and Information Sciences, ISSN 2079-8407, Vol 2, No-11, pp- 563- 573",
+    "year": 2011,
+    "url": "http://www.cisjournal.org"
+  },
+  {
+    "title": "E-Content Management and Delivery in Digital Library: A software approach",
+    "authors": ["Achintya K. Mandal", "UtpalRoy", "A.C.Mondal"],
+    "journal": "Jr of IUP, March 2012",
+    "year": 2012,
+    "url": "#"
+  },
+  {
+    "title": "Evaluation of equal grade students using fuzzy logic",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mandal"],
+    "journal": "International Journal of Information and Computing Science, Vol.13, No.1, June 2010",
+    "year": 2010,
+    "url": "#"
+  },
+  {
+    "title": "A Fuzzy Modeling approach to evaluate faculty Performance",
+    "authors": ["A.Neogi", "A.C.Mondal", "S.K.Mandal"],
+    "journal": "ACM Ubiquity, Vol 9, Issue 15, April 15-21, 2008",
+    "year": 2008,
+    "url": "#"
+  },
+  {
+    "title": "Modified Group Decision Algorithm for Performance Appraisal of Indian Premier League Cricketers",
+    "authors": ["P.K.Dey", "D.N.Ghosh", "A.C.Mondal"],
+    "journal": "communicated and accepted in International Journal of Sports Science and Engineering (World Academic Union), ISSN: 1750-9831",
+    "year": 2012,
+    "url": "#"
+  },
+  {
+    "title": "Reverse Conversion Scheme for Signed – digit Number System: Transforming Radix – complement output",
+    "authors": ["M. S. Chakraborty", "A. C. Mondal"],
+    "journal": "IJEECS/ Telkomnika (Scopus-indexed), Vol. 4, No. 3, 2016",
+    "year": 2016,
+    "url": "#"
+  },
+  {
+    "title": "Notes on “a novel conversion scheme from a redundant binary number to two’s complement binary number for parallel architectures ” proposed by Choo et. al.",
+    "authors": ["M. S. Chkraborty", "T. Ghosh", "A. C. Mondal"],
+    "journal": "103 (5), pp 5 – 7, IJCA, 2014",
+    "year": 2014,
+    "url": "#"
+  },
+  {
+    "title": "Studies on Performance Evaluation of Homeopathic Treatment for Essential Hypertension Using Principle Component Analysis",
+    "authors": ["A.C.Mondal", "S.Ray", "K.Dey", "A.Neogi"],
+    "journal": "The Journal of Management,Information Technology and Journalism, IMS Manthan, Noida(India), ISSN:0974-7141(Print),Jan-June Edition,2015,Vol.- X, Issue 1",
+    "year": 2015,
+    "url": "#"
+  },
+  {
+    "title": "Studies on Performance Evaluation of Homeopathic Medicine for Essential Hypertension using Fuzzy Systems",
+    "authors": ["Sumanta Ray", "A.C.Mondal", "A.Neogi"],
+    "journal": "INDIAN SCIENCE CRUISER(International Scientific Journal), ISSN:0970-4256(Print). Vol.-29,No.- 2,March-2015)",
+    "year": 2015,
+    "url": "#"
+  },
+  {
+    "title": "A new student ranking system by identifying important parameters using principal component analysis:A case study for class 10 level students",
+    "authors": ["A.C.Mondal", "S.Ray"],
+    "journal": "International Journal of Advanced Research in Computer Science & Technology(IJARCST). ISSN: 2347-8446(Online),ISSN: 2347-9817(Print).(Accepted)",
+    "year": 2015,
+    "url": "#"
+  },
+  {
+    "title": "Inverse of Low Resolution Line Halftone Images for Document Inspection",
+    "authors": ["B.Halder", "U.Garain", "R.Darbar", "A.C.Mondal"],
+    "journal": "Computational Forensics, 95-103",
+    "year": 2016,
+    "url": "#"
+  },
+  {
+    "title": "A Study on Sentiment Analysis",
+    "authors": ["S.Modak", "A.C.Mondal"],
+    "journal": "International Journal of Advanced Research in Computer Science and Technology(IJARCST 2014),Vol.-2,Issue-2,Version-2,April-June-2014.ISSN-2347-8446(online),ISSN 2347-9817(print)",
+    "year": 2014,
+    "url": "#"
+  },
+  {
+    "title": "A Model of Opinion Mining for Classifying Movies",
+    "authors": ["Sohom Ghosh", "Santanu Modak", "Abhoy Chand Mondal"],
+    "journal": "International Journal of Advanced Research in Computer Science & Technology (IJARCST 2015), Vol. 3, Issue 1 (Jan. - Mar. 2015), ISSN : 2347 - 8446 (Online) ISSN : 2347 - 9817 (Print)",
+    "year": 2015,
+    "url": "#"
+  },
+  {
+    "title": "A Model of Structured Opinion Format",
+    "authors": ["Santanu Modak", "Abhoy Chand Mondal"],
+    "journal": "International Journal of Advanced Research in Computer Science and Software Engineering, Volume 4, Issue 5, May 2014 ISSN: 2277 128X",
+    "year": 2014,
+    "url": "#"
+  },
+  {
+    "title": "A Model to Compute Degree of Polarity of Review Titles",
+    "authors": ["Sohom Ghosh", "Santanu Modak", "Abhoy Chand Mondal"],
+    "journal": "Annals of Pure and Applied Mathematics, Vol. 7, No. 1, 2014, 65-70 ISSN: 2279-087X (P), 2279-0888(online), Published on 9 September 2014",
+    "year": 2014,
+    "url": "http://www.researchmathsci.org"
+  },
+  {
+    "title": "A Comparative study of Classifiers’ Performance for Gender Classification",
+    "authors": ["Santanu Modak", "Abhoy Chand Mondal"],
+    "journal": "International Journal of Innovative Research in Computer and Communication Engineering, Vol. 2, Issue 5, May 2014, ISSN(Online): 2320-9801 ISSN (Print): 2320-9798",
+    "year": 2014,
+    "url": "#"
+  },
+  {
+    "title": "Compute Attributes Contribution for Player Pricing in IPL",
+    "authors": ["Pabitra Kumar Dey", "Abhoy Chand Mondal"],
+    "journal": "Annals of Pure and Applied Mathematics (APPM), ISSN: 2279-087X (P), 2279-0888(online), Vol. 5, No.1, 11-16, November 2013",
+    "year": 2013,
+    "url": "http://www.researchmathsci.org/APAMtoc.html"
+  },
+  {
+    "title": "A new student ranking system by identifying important parameters using principal component analysis:A case study for class 10 level students",
+    "authors": ["A.C.Mondal", "S.Ray"],
+    "journal": "International Journal of Advanced Research in Computer Science & Technology(IJARCST), 2016,  Volume 5, Issue 1, ISSN: 2347-8446(Online),ISSN: 2347-9817(Print)",
+    "year": 2016,
+    "url": "#"
+  },
+  {
+    "title": "A Computational Model to Identify the Manner of Death in Head Injury using Classification Methods",
+    "authors": ["S.Ray", "A.C.Mondal", "P.Mukhopadhyay", "A.Neogi"],
+    "journal": "International Journal of Computing and Applications, Published by Serials Publicatuions,2017,  ISSN: 0973-5704",
+    "year": 2017,
+    "url": "#"
+  },
+  {
+    "title": "A Study to Evaluate Symptoms in Essential Hypertension using Random Forest Decision Tree Algorithm",
+    "authors": ["S. Ray", "A.C.Mondal", "A.Neogi", "K.Dey"],
+    "journal": "INDIAN SCIENCE CRUISER(International Scientific Journal), published by Institute of Science, Education and Culture, Vol.-31, No.4, July 2017 pp.28-35, ISSN:0970-4256(UGC Approved)",
+    "year": 2017,
+    "url": "#"
+  },
+  {
+    "title": "A Brief Description of software tools used for Big Data Analysis in Medical Education Systems Evaluation",
+    "authors": ["S.Ray", "A.C.Mondal"],
+    "journal": "Indian Journal of Computer Science and Engineering, 2017, p-ISSN: 2231-3850, e-ISSN: 0976-5166. (Communicated)",
+    "year": 2017,
+    "url": "#"
+  },
+  {
+    "title": "Fuzzy Inference Rule & Decision Tree based Player Base Price Classification in IPL",
+    "authors": ["Pabitra Kumar Dey", "Abhoy Chand Mondal"],
+    "journal": "communicated to International Journal of Information and Decision Sciences (IJIDS), Indercience Publishers, ISSN: 1756-7017, ISSN (E): 1756-7025",
+    "year": 2012,
+    "url": "#"
+  },
+  {
+    "title": "Optimum Cricket Team Selection in IPL: An Expert System Approach",
+    "authors": ["Pabitra Kumar Dey", "Abhoy Chand Mondal"],
+    "journal": "communicated to International Journal of Applied Decision Sciences (IJADS), Inderscience Publishers, ISSN: 1755-8077, ISSN (E): 1755-8085",
+    "year": 2012,
+    "url": "#"
+  },
+  {
+    "title": "Modelling of Ink-Colour degradation on old printed documents",
+    "authors": ["Biswajit Halder", "Abhoy C. Mondal"],
+    "journal": "InderScience, International Journal of Computational Vision and Robotics (IJCVR 2017), IJCVR-83454, Vol-7, Issue-4, pp.398-410",
+    "year": 2017,
+    "url": "#"
+  },
+  {
+    "title": "Finite Variable Scaling Analysis of Monthly Data of the Sunspot Numbers",
+    "authors": ["D.N.Ghosh", "K.Ghosh", "A.C.Mondal"],
+    "journal": "IJICS, 2006,Vol.8, No.2, pp.29-32",
+    "year": 2006,
+    "url": "#"
+  },
+  {
+    "title": "Search for Periodicity in a Time Series Data by Group Method of Data Handling Algorithm",
+    "authors": ["D.N.Ghosh", "K.Ghosh", "A.C.Mondal"],
+    "journal": "IJICS, 2007,Vol.9, No.2,pp.68-72",
+    "year": 2007,
+    "url": "#"
+  },
+  {
+    "title": "A Font Invariant Ol Chiki Basic Character Recognition using Digital Curvlet Transformation",
+    "authors": ["Sumanta Daw", "Dr. A. C. Mondal"],
+    "journal": "published in International Journal of Mathematics and Computational methods in Science and Technology (ISSN: 2249-8915), September-2013",
+    "year": 2013,
+    "url": "#"
   }
 ]
