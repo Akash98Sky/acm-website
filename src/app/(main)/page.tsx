@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
 
 import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
@@ -52,7 +53,11 @@ export default function HomePage() {
           </Section>
           
           <Section title={resume.interests.title}>
-            <p className="text-sm text-foreground/80">{resume.interests.description}</p>
+            <div className="flex flex-wrap gap-2">
+              {resume.interests.description.split(', ').map((interest, i) => (
+                <Badge key={i} variant="secondary">{interest.replace('.', '')}</Badge>
+              ))}
+            </div>
           </Section>
         </div>
         
