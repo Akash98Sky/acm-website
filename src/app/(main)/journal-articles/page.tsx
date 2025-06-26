@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import {
@@ -14,17 +13,16 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination';
 import journalArticles from '@/data/journal-articles.json';
-import conferencePapers from '@/data/conference-papers.json';
 import type { Publication } from '@/lib/types';
 import { Search } from 'lucide-react';
 
-const ITEMS_PER_PAGE = 3;
+const ITEMS_PER_PAGE = 5;
 
 export default function JournalArticlesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const allPublications: Publication[] = useMemo(() => [...journalArticles, ...conferencePapers], []);
+  const allPublications: Publication[] = journalArticles;
 
   const filteredPublications = useMemo(() => {
     if (!searchTerm) return allPublications;
@@ -156,37 +154,25 @@ export default function JournalArticlesPage() {
       
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Recent Publications</h2>
-        <div className="space-y-10">
+        <div className="space-y-8">
           {currentPublications.length > 0 ? (
             currentPublications.map((item, index) => (
-              <div key={index} className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="md:col-span-2 space-y-3">
-                  <h3 className="text-xl font-semibold">
+              <div key={index} className="flex justify-between items-center">
+                <div className="space-y-1">
+                  <h3 className="text-lg font-semibold">
                     <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                       {item.title}
                     </a>
                   </h3>
-                  <p className="text-muted-foreground">
-                    Published in {item.journal || item.conference}, {item.year}
+                  <p className="text-sm text-muted-foreground">
+                    Published in <em>{item.journal}</em>, {item.year}
                   </p>
-                  <Button variant="outline" asChild>
-                    <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      Read Article
-                    </a>
-                  </Button>
                 </div>
-                <div className="md:col-span-1">
-                   <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    <Image
-                      src={item.image || 'https://placehold.co/600x400.png'}
-                      data-ai-hint={item.imageHint || 'publication document'}
-                      alt={item.title}
-                      width={600}
-                      height={400}
-                      className="rounded-lg object-cover aspect-[4/3] w-full"
-                    />
-                   </a>
-                </div>
+                <Button variant="outline" asChild>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    Read Article
+                  </a>
+                </Button>
               </div>
             ))
           ) : (
