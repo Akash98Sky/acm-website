@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 
 import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
@@ -27,10 +27,15 @@ export default function HomePage() {
   return (
     <div className="max-w-4xl mx-auto space-y-12">
       <header className="flex flex-col items-center text-center space-y-4">
-        <Avatar className="h-28 w-28">
-          <AvatarImage src={resume.basics.image} alt={resume.basics.name} data-ai-hint="woman portrait" />
-          <AvatarFallback>{resume.basics.name.charAt(0)}</AvatarFallback>
-        </Avatar>
+        <Image
+          src={resume.basics.image}
+          alt={resume.basics.name}
+          width={160}
+          height={240}
+          className="rounded-lg shadow-xl object-cover"
+          data-ai-hint="man portrait"
+          priority
+        />
         <div>
           <h1 className="text-4xl font-bold">{resume.basics.name}</h1>
           <p className="text-lg text-muted-foreground">{resume.basics.label}</p>
