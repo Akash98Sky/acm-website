@@ -7,13 +7,7 @@ import { FolderKanban, Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-
-import resume from '@/data/resume.json';
-import { Resume } from '@/lib/types';
 import { ThemeToggle } from '@/components/theme-toggle';
-
-const typedResume: Resume = resume;
 
 const navItems = [
   { label: 'About', href: '/' },
@@ -51,10 +45,6 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Avatar className="hidden md:block h-9 w-9">
-            <AvatarImage src={typedResume.basics.image} alt={typedResume.basics.name} data-ai-hint="woman portrait" />
-            <AvatarFallback>{typedResume.basics.name.charAt(0)}</AvatarFallback>
-          </Avatar>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
