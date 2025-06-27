@@ -22,7 +22,7 @@ export default function JournalArticlesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const allPublications: Publication[] = journalArticles;
+  const allPublications: Publication[] = useMemo(() => [...journalArticles].sort((a, b) => b.year - a.year), []);
 
   const filteredPublications = useMemo(() => {
     if (!searchTerm) return allPublications;

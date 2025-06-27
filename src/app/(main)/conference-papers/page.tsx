@@ -20,7 +20,7 @@ const ITEMS_PER_PAGE = 5;
 const CATEGORIES = ['All', 'Computer Science', 'Data Science'];
 
 export default function ConferencePapersPage() {
-  const typedPapers: Publication[] = papers;
+  const typedPapers: Publication[] = useMemo(() => [...papers].sort((a, b) => b.year - a.year), []);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');

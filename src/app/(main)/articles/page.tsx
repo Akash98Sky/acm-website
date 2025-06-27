@@ -13,7 +13,7 @@ import conferencePapers from '@/data/conference-papers.json';
 import type { Publication } from '@/lib/types';
 
 export default function ArticlesPage() {
-  const allPublications: Publication[] = [...journalArticles, ...conferencePapers];
+  const allPublications: Publication[] = [...journalArticles, ...conferencePapers].sort((a, b) => b.year - a.year);
 
   return (
     <div className="space-y-8">
