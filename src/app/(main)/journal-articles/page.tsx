@@ -167,7 +167,7 @@ export default function JournalArticlesPage() {
             currentPublications.map((item, index) => (
               <Card key={index} className="transition-shadow duration-300 hover:shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl">
+                  <CardTitle className="text-xl">
                     <a
                       href={item.url}
                       target="_blank"
