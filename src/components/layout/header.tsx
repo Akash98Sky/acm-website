@@ -11,6 +11,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 import resume from '@/data/resume.json';
 import { Resume } from '@/lib/types';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const typedResume: Resume = resume;
 
@@ -48,7 +49,8 @@ export default function Header() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Avatar className="hidden md:block h-9 w-9">
             <AvatarImage src={typedResume.basics.image} alt={typedResume.basics.name} data-ai-hint="woman portrait" />
             <AvatarFallback>{typedResume.basics.name.charAt(0)}</AvatarFallback>
