@@ -12,9 +12,17 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import journalArticles from '@/data/journal-articles.json';
 import type { Publication } from '@/lib/types';
-import { Search } from 'lucide-react';
+import { ExternalLink, Search } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 5;
 
@@ -154,26 +162,46 @@ export default function JournalArticlesPage() {
       
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Recent Publications</h2>
-        <div className="space-y-8">
+        <div className="space-y-6">
           {currentPublications.length > 0 ? (
             currentPublications.map((item, index) => (
-              <div key={index} className="flex justify-between items-center">
-                <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Card key={index} className="transition-shadow duration-300 hover:shadow-xl">
+                <CardHeader>
+                  <CardTitle className="text-2xl">
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-primary/80 transition-colors"
+                    >
                       {item.title}
                     </a>
-                  </h3>
+                  </CardTitle>
+                  <CardDescription className="pt-2">
+                    {item.authors.join(', ')}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Published in <em>{item.journal}</em>, {item.year}
+                    <em>{item.journal}</em>, {item.year}
                   </p>
-                </div>
-                <Button variant="outline" asChild>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    Read Article
-                  </a>
-                </Button>
-              </div>
+                </CardContent>
+                <CardFooter className="gap-4">
+                  <Button asChild>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Read Article
+                    </a>
+                  </Button>
+                  {item.doi && (
+                    <Button asChild variant="link">
+                      <a href={`https://doi.org/${item.doi}`} target="_blank" rel="noopener noreferrer">
+                        DOI: {item.doi}
+                      </a>
+                    </Button>
+                  )}
+                </CardFooter>
+              </Card>
             ))
           ) : (
             <p className="text-muted-foreground text-center py-8">No publications found.</p>
