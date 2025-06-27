@@ -1,33 +1,235 @@
 
 [
   {
-    "title": "Adversarial Training for Robustness in Named Entity Recognition",
-    "authors": ["Evelyn Reed", "Jian Li"],
-    "conference": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
-    "year": 2023,
+    "title": "Equivalence of Reverse Conversion of Binary Signed-Digit Number System and Two’s-Complement to Canonical Signed-Digit Recording",
+    "authors": ["M. S. Chakraborty", "S Sao", "A C Mondal"],
+    "conference": "IEEE International Conference on Recent Advancement of Information Technology (RAIT), IIT (ISM), Dhanbad, India",
+    "year": 2018,
     "url": "#",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "natural language",
     "category": "Computer Science"
   },
   {
-    "title": "Dynamic Context-Aware Attention for Abstractive Summarization",
-    "authors": ["Evelyn Reed", "David Chen"],
-    "conference": "Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-    "year": 2022,
+    "title": "Compute Attributes Contribution for Player Pricing in IPL",
+    "authors": ["P.K.Dey", "A.C.Mondal"],
+    "conference": "Proceedings of STCAOT",
+    "year": 2013,
     "url": "#",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "abstractive summarization",
-    "category": "Computer Science"
-  },
-  {
-    "title": "Learning Phonetic Representations from Raw Audio using Self-Supervision",
-    "authors": ["Evelyn Reed", "Sofia Garcia"],
-    "conference": "Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
-    "year": 2020,
-    "url": "#",
-    "image": "https://placehold.co/600x400.png",
-    "imageHint": "audio waves",
     "category": "Data Science"
+  },
+  {
+    "title": "A Rough set decision in an interview selection problem:Analgorihimic approach",
+    "authors": ["Sonu Rana", "A.C.Mondal"],
+    "conference": "Proceedings of International Conference of ICCS-2013, The University of Burdwan",
+    "year": 2013,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A Front Invariant OlChiki Basic Character Recognition using Digital Curve-let Transformation",
+    "authors": ["SumantaDaw", "A.C.Mondal"],
+    "conference": "Proceedings of International Conference of ICCS-2013, The University of Burdwan",
+    "year": 2013,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Combination of graph does not affect the execution of finding group of shorter path algorithm",
+    "authors": ["Taraknath Pal", "A.C.Mondal"],
+    "conference": "Proceedings of International Conference of ICCS-2013, The University of Burdwan",
+    "year": 2013,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A study of the development of principal component analysis using neural network in assessment of higher education system",
+    "authors": ["S.Ray", "A.C.Mondal", "A.Neogi"],
+    "conference": "Proceedings of National Conference of NaCCS-2012, The University of Burdwan",
+    "year": 2012,
+    "url": "#",
+    "category": "Data Science"
+  },
+  {
+    "title": "Tourist Spot by using Principal Component Analysis",
+    "authors": ["A.C.Mondal", "S.Ray"],
+    "conference": "Proceedings of third International Conference of ICCS-2016, The University of Burdwan",
+    "year": 2016,
+    "url": "#",
+    "category": "Data Science"
+  },
+  {
+    "title": "Web Technology Enhancements:Accomplishments and Future Research Directions",
+    "authors": ["S.Maitra", "A.C.Mondal"],
+    "conference": "Proceedings of National Conference of NaCCS-2012, The University of Burdwan",
+    "year": 2012,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "CONSTITUTE A SUB-GRAPH WITH n-levels TO SEARCH A SET OF SHORTER PATHS USING GENETIC ALGORITHM",
+    "authors": ["Taraknath Pal", "A.C.Mondal"],
+    "conference": "IEEE International Conference on Intelligent Computing and Intelligent Systems (ICIS 2011)",
+    "year": 2011,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "The fuzzy TOPSIS method for engineering students’ performance evaluation in an industrial automation area",
+    "authors": ["A.Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "Proceedings of National Conference on Industrial Engineering, WBUT, Kolkata",
+    "year": 2011,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "E-learning course evaluation using fuzzy numbers associated with degrees of confidence",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "Proceedings of International Conference on Scientific Paradigm Shift in Information Technology & Management, Institute of Engineering & Management, Kolkata",
+    "year": 2011,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Intelligent Travelling Method using Genetic algorithm for Long Distance",
+    "authors": ["Tarak Nath Paul", "A.C.Mondal"],
+    "conference": "ICCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Age based Color level Variation of ancient Documents",
+    "authors": ["BiswajitHalder", "A.C.Mondal"],
+    "conference": "ICCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Greedy Approach to Graph-Based Algorithm for Color Image Segmentation",
+    "authors": ["Achintya K. Mandal", "A.C.Mondal", "Utpal Roy"],
+    "conference": "ICCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Fuzzy Classification using Decision Tree Algorithms",
+    "authors": ["Pabitra Kr. Dey", "A.C.Mondal", "G. Chakraborty"],
+    "conference": "ICCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A Study of web Mining Research – Last few years and the Road Ahead",
+    "authors": ["S. Maitra", "A.C.Mondal"],
+    "conference": "ICCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Color Based Age Determination on Printed Document",
+    "authors": ["B.Halder", "A.C.Mondal"],
+    "conference": "National Conference on computing and systems (NACCS ’10)",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Faster Genetic Algoritm for Traverse Large Distance",
+    "authors": ["T. Paul", "A.C.Mondal"],
+    "conference": "NACCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Quantum Criptography : Security through uncertainty",
+    "authors": ["P.K.Dey", "P.S. Goswami", "A.C.Mondal"],
+    "conference": "NACCS-2010",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Fuzzy evaluation of Students Rank using automatically adjusted question marks",
+    "authors": ["A. Neogi", "S.K.Mandal", "A.C.Mondal"],
+    "conference": "National Conference on Recent Trends in Engg. & Education, NITTTR, Kolkata",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A fuzzy system for faculty selection using automatically adjusted selection marks",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "National Conference on Computing & Systems, Burdwan University",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "College teachers’ performance appraisal using weighted fuzzy reasoning",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "Proceedings of ICCS, Burdwan University",
+    "year": 2010,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Application of Fuzzy logic in Human Resource Management",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "12th International & 43rd National Conference of Indian Academy of Applied Psychology",
+    "year": 2008,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A Study of Development of Soft Computing in Evaluation of Gifted Students",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "UGC sponsored National Symposium of Emerging trend of Computer Science(ETCS-2012)",
+    "year": 2012,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Student learning style Evaluation in E-learning framework using a Back propogation Neural Network Method",
+    "authors": ["A. Neogi", "A.C.Mondal", "S.K.Mondal"],
+    "conference": "Proceedings of 2nd National Conference(ETEI-2011), Organised byNITTTR, Kolkata",
+    "year": 2012,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "Currency note authentication checking by fluorescent paper pulp",
+    "authors": ["B.Halder", "A.C.Mondal"],
+    "conference": "Proceedings of National Conference of NaCCS-2012, The University of Burdwan",
+    "year": 2012,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A New Approach to Evaluate a Tourist Spot by using Principal Component Analysis",
+    "authors": ["S.Ray", "A.C.Mondal"],
+    "conference": "Proceedings of third International Conference of ICCS-2016, The University of Burdwan",
+    "year": 2016,
+    "url": "#",
+    "category": "Data Science"
+  },
+  {
+    "title": "A Font Invariant Ol Chiki Basic Character and Digit Recognition",
+    "authors": ["Sumanta Daw", "Dr. A. C. Mondal"],
+    "conference": "Second International Conference on Computing and System – 2013",
+    "year": 2013,
+    "url": "#",
+    "category": "Computer Science"
+  },
+  {
+    "title": "A Hybrid Recognition System of Handwritten OlChiki Character and Digit",
+    "authors": ["Sumanta Daw", "Dr. A. C. Mondal"],
+    "conference": "IEEE World Congress on Computational Intelligence",
+    "year": 2018,
+    "url": "#",
+    "category": "Computer Science"
   }
 ]
