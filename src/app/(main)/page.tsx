@@ -2,6 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
+import { Award, GraduationCap } from 'lucide-react';
 
 import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
@@ -14,9 +15,12 @@ const ListItem = ({ primary, secondary }: { primary: string; secondary: string }
   </div>
 );
 
-const Section = ({ title, children }: { title: string, children: React.ReactNode }) => (
+const Section = ({ title, icon: Icon, children }: { title: string, icon?: React.ComponentType<{ className?: string }>, children: React.ReactNode }) => (
   <section className="space-y-4">
-    <h2 className="text-2xl font-bold">{title}</h2>
+    <div className="flex items-center gap-3">
+      {Icon && <Icon className="h-6 w-6 text-primary" />}
+      <h2 className="text-2xl font-bold">{title}</h2>
+    </div>
     {children}
   </section>
 );
@@ -65,7 +69,7 @@ export default function HomePage() {
         </Section>
       </div>
 
-      <Section title="PhD Awardees">
+      <Section title="PhD Awardees" icon={Award}>
         <div>
           {resume.awards.map((award, i) => (
             <ListItem key={i} primary={award.awardee} secondary={award.details} />
@@ -73,7 +77,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section title="PhD Scholars">
+      <Section title="PhD Scholars" icon={GraduationCap}>
           <div>
           {resume.references.map((scholar, i) => (
             <ListItem key={i} primary={scholar.name} secondary={scholar.details} />
