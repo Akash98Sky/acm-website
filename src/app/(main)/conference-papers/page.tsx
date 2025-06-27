@@ -17,10 +17,15 @@ import papers from '@/data/conference-papers.json';
 import type { Publication } from '@/lib/types';
 
 const ITEMS_PER_PAGE = 5;
-const CATEGORIES = ['All', 'Computer Science', 'Data Science'];
 
 export default function ConferencePapersPage() {
   const typedPapers: Publication[] = useMemo(() => [...papers].sort((a, b) => b.year - a.year), []);
+
+  const categories = useMemo(() => {
+    const allCategories = typedPapers.map(paper => paper.category).filter(Boolean);
+    const uniqueCategories = [...new Set(allCategories as string[])];
+    return ['All', ...uniqueCategories.sort()];
+  }, [typedPapers]);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
@@ -165,8 +170,8 @@ export default function ConferencePapersPage() {
         />
       </div>
 
-      <div className="flex gap-2">
-        {CATEGORIES.map((category) => (
+      <div className="flex flex-wrap gap-2">
+        {categories.map((category) => (
           <Button
             key={category}
             variant={activeCategory === category ? 'secondary' : 'ghost'}
