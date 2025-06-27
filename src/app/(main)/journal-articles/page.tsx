@@ -167,7 +167,7 @@ export default function JournalArticlesPage() {
             currentPublications.map((item, index) => (
               <Card key={index} className="transition-shadow duration-300 hover:shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-xl">
+                  <CardTitle className="text-lg font-semibold">
                     <a
                       href={item.url}
                       target="_blank"
@@ -177,15 +177,13 @@ export default function JournalArticlesPage() {
                       {item.title}
                     </a>
                   </CardTitle>
-                  <CardDescription className="pt-2">
-                    {item.authors.join(', ')}
+                  <CardDescription>
+                    <span>Authors: {item.authors.join(', ')}</span>
+                    <p className="text-sm text-muted-foreground pt-2">
+                      <em>{item.journal}</em>, {item.year}
+                    </p>
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    <em>{item.journal}</em>, {item.year}
-                  </p>
-                </CardContent>
                 <CardFooter className="gap-4">
                   <Button asChild>
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
