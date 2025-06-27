@@ -3,15 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { Award, GraduationCap } from 'lucide-react';
+import type { ComponentType } from 'react';
 
 import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
 
 
-const ListItem = ({ primary, secondary }: { primary: string; secondary: string }) => (
-  <div className="flex justify-between items-center py-3 border-b">
-    <p className="text-sm text-foreground/80">{primary}</p>
-    <p className="text-sm text-right text-foreground/60">{secondary}</p>
+const ListItem = ({ primary, secondary, icon: Icon }: { primary: string; secondary: string; icon?: ComponentType<{ className?: string }> }) => (
+  <div className="flex items-center gap-4 py-3 border-b">
+    {Icon && <Icon className="h-5 w-5 text-primary shrink-0" />}
+    <div className="flex-1 flex justify-between items-center">
+      <p className="text-sm text-foreground/80">{primary}</p>
+      <p className="text-sm text-right text-foreground/60">{secondary}</p>
+    </div>
   </div>
 );
 
@@ -69,18 +73,18 @@ export default function HomePage() {
         </Section>
       </div>
 
-      <Section title="PhD Awardees" icon={Award}>
+      <Section title="PhD Awardees">
         <div>
           {resume.awards.map((award, i) => (
-            <ListItem key={i} primary={award.awardee} secondary={award.details} />
+            <ListItem key={i} primary={award.awardee} secondary={award.details} icon={Award} />
           ))}
         </div>
       </Section>
 
-      <Section title="PhD Scholars" icon={GraduationCap}>
+      <Section title="PhD Scholars">
           <div>
           {resume.references.map((scholar, i) => (
-            <ListItem key={i} primary={scholar.name} secondary={scholar.details} />
+            <ListItem key={i} primary={scholar.name} secondary={scholar.details} icon={GraduationCap} />
           ))}
         </div>
       </Section>
