@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { Award, GraduationCap } from 'lucide-react';
@@ -94,11 +94,13 @@ export default function HomePage() {
           {resume.publications.bookChapters.map((chapter, i) => (
             <Card key={i} className="h-full flex flex-col">
               <CardHeader>
-                <CardTitle className="text-lg font-semibold leading-tight">{chapter.title}</CardTitle>
+                <CardTitle className="text-lg font-semibold leading-tight">
+                  {chapter.title}
+                </CardTitle>
+                <CardDescription className='pt-1'>
+                  <p className="text-sm text-muted-foreground">{chapter.details}</p>
+                </CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-sm text-muted-foreground">{chapter.details}</p>
-              </CardContent>
             </Card>
           ))}
         </div>
