@@ -46,9 +46,11 @@ export async function sendEmail(formData: unknown) {
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>', 
       to: [toEmail],
-      subject: subject,
+      subject: `Message from ${name}: ${subject}`,
       reply_to: email,
       html: `
+        <p>Subject: ${subject}</p>
+        <hr />
         <p>${message}</p>
         <hr />
         <p>${name}</p>
