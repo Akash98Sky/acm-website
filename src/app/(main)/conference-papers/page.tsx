@@ -12,7 +12,14 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination';
-import { Search } from 'lucide-react';
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { ExternalLink, Search } from 'lucide-react';
 import papers from '@/data/conference-papers.json';
 import type { Publication } from '@/lib/types';
 
@@ -184,26 +191,39 @@ export default function ConferencePapersPage() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Recent Papers</h2>
-        <div className="space-y-8">
+        <div className="space-y-6">
           {currentPapers.length > 0 ? (
             currentPapers.map((paper, index) => (
-              <div key={index} className="flex justify-between items-center">
-                <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">
-                    <a href={paper.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Card key={index} className="transition-shadow duration-300 hover:shadow-xl">
+                <CardHeader>
+                  <CardTitle className="text-lg font-semibold">
+                    <a href={paper.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary/80 transition-colors">
                       {paper.title}
                     </a>
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Presented at <em>{paper.conference}</em>, {paper.year}
-                  </p>
-                </div>
-                <Button variant="outline" asChild>
-                  <a href={paper.url} target="_blank" rel="noopener noreferrer">
-                    View Paper
-                  </a>
-                </Button>
-              </div>
+                  </CardTitle>
+                  <CardDescription>
+                    <span>Authors: {paper.authors.join(', ')}</span>
+                    <p className="text-sm text-muted-foreground pt-2">
+                      Presented at <em>{paper.conference}</em>, {paper.year}
+                    </p>
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter className="gap-4">
+                  <Button asChild>
+                    <a href={paper.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Paper
+                    </a>
+                  </Button>
+                  {paper.doi && (
+                    <Button asChild variant="link">
+                      <a href={`https://doi.org/${paper.doi}`} target="_blank" rel="noopener noreferrer">
+                        DOI: {paper.doi}
+                      </a>
+                    </Button>
+                  )}
+                </CardFooter>
+              </Card>
             ))
           ) : (
             <p className="text-muted-foreground text-center py-8">No papers found.</p>
