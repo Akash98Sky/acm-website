@@ -2,6 +2,8 @@
 
 import { Resend } from 'resend';
 import { z } from 'zod';
+import resumeData from '@/data/resume.json';
+import type { Resume } from '@/lib/types';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -37,19 +39,20 @@ export async function sendEmail(formData: unknown) {
     rateLimit.set(email, { count: 1, timestamp: now });
   }
 
+  const resume: Resume = resumeData;
+  const toEmail = resume.basics.email;
 
   try {
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>', 
-      to: ['delivered@resend.dev'], // Replace with your actual receiving email
-      subject: `New Message from ${name}: ${subject}`,
+      to: [toEmail],
+      subject: subject,
       reply_to: email,
       html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
         <p>${message}</p>
+        <hr />
+        <p>${name}</p>
+        <p>${email}</p>
       `,
     });
 

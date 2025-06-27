@@ -25,6 +25,7 @@ export interface ResumeBasics {
   image: string;
   summary: string;
   location: string;
+  email: string;
 }
 
 export interface Resume {
