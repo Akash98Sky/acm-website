@@ -21,7 +21,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import journalArticles from '@/data/journal-articles.json';
-import type { Publication } from '@/lib/types';
+import type { JournalArticle } from '@/lib/types';
 import { ExternalLink, Search } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 5;
@@ -30,14 +30,13 @@ export default function JournalArticlesPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const allPublications: Publication[] = useMemo(() => [...journalArticles].sort((a, b) => b.year - a.year), []);
+  const allPublications: JournalArticle[] = useMemo(() => [...journalArticles].sort((a, b) => b.year - a.year), []);
 
   const filteredPublications = useMemo(() => {
     if (!searchTerm) return allPublications;
     return allPublications.filter((pub) =>
       pub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (pub.journal && pub.journal.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (pub.conference && pub.conference.toLowerCase().includes(searchTerm.toLowerCase())) ||
       pub.authors.some(author => author.toLowerCase().includes(searchTerm.toLowerCase()))
     );
   }, [allPublications, searchTerm]);

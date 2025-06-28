@@ -30,75 +30,69 @@
       "period": "1987"
     }
   ],
-  "interests": {
-    "title": "Research Interests",
-    "description": "Natural Language Processing, Information Retrieval, Sentiment Analysis, Opinion Mining, Soft Computing, Fuzzy Logic, Neural Networks, Big Data Analytics."
-  },
-  "awards": [
-    {
-      "awardee": "Dipendranath Ghosh",
-      "details": "A Parallel Computational Approach to Investigate the Variability of Time Dependent Data (2008)"
-    },
-    {
-      "awardee": "Amartya Neogi",
-      "details": "Studies on Performance Evaluation of Indian Education Using Fuzzy System (2013)"
-    },
-    {
-      "awardee": "Taraknath Paul",
-      "details": "Studies on Shortest Path Using Genetic Algorithm (2015)"
-    },
-    {
-      "awardee": "Biswajit Halder",
-      "details": "Studies on Automatic Authentication of Printed Security Documents (2016)"
-    },
-    {
-      "awardee": "Sumanta Ray",
-      "details": "Studies on Performance Evaluation of Medical Education System Using Classification Models (2018)"
-    },
-    {
-      "awardee": "Pabitra Kumar De",
-      "details": "Studies on Multi Criteria Optimum Computation in IPL Using Expert System (2018)"
-    }
+  "researchInterests": [
+    "Natural Language Processing",
+    "Information Retrieval",
+    "Sentiment Analysis",
+    "Opinion Mining",
+    "Soft Computing",
+    "Fuzzy Logic",
+    "Neural Networks",
+    "Big Data Analytics"
   ],
-  "references": [
-    {
-      "name": "Amitabha Bandyopadhyay",
-      "details": "Study and Improvement of Software Quality using Data Mining Techniques"
-    },
-    {
-      "name": "Madhusudan Chakraborti",
-      "details": "A Study of Reverse Conversion Algorithms for Signed-digit number systems"
-    },
-    {
-      "name": "Santanu Modak",
-      "details": "A Computational Study of Sentiment Analysis from User Opinion"
-    },
-    {
-      "name": "Sanjib Mandal",
-      "details": "Opinion Mining: A Study and New Dimension"
-    },
-    {
-      "name": "Sourabh Maitra",
-      "details": "Study of Learning Management Systems in Semantic Web Framework working on Cloud Computing Environment"
-    }
-  ],
-  "publications": {
-    "bookChapters": [
+  "guided": {
+    "awardees": [
       {
-        "title": "Computer Fundamental and Programming in C",
-        "details": "Published by The Directorate of Distance Education, The University of Burdwan (2007)"
+        "name": "Dipendranath Ghosh",
+        "thesisTitle": "A Parallel Computational Approach to Investigate the Variability of Time Dependent Data",
+        "year": 2008
       },
       {
-        "title": "Internet and E-Commerce",
-        "details": "Published by The Directorate of Distance Education, The University of Burdwan (2007)"
+        "name": "Amartya Neogi",
+        "thesisTitle": "Studies on Performance Evaluation of Indian Education Using Fuzzy System",
+        "year": 2013
       },
       {
-        "title": "Computational Intelligence Using Type-2 Fuzzy Logic Framework",
-        "details": "Pages 1-29, IGI GLOBAL (Jan. 2013)"
+        "name": "Taraknath Paul",
+        "thesisTitle": "Studies on Shortest Path Using Genetic Algorithm",
+        "year": 2015
       },
       {
-        "title": "Intelligence in Web Technology",
-        "details": "Pages 739-757, IGI GLOBAL (Jan. 2013)"
+        "name": "Biswajit Halder",
+        "thesisTitle": "Studies on Automatic Authentication of Printed Security Documents",
+        "year": 2016
+      },
+      {
+        "name": "Sumanta Ray",
+        "thesisTitle": "Studies on Performance Evaluation of Medical Education System Using Classification Models",
+        "year": 2018
+      },
+      {
+        "name": "Pabitra Kumar De",
+        "thesisTitle": "Studies on Multi Criteria Optimum Computation in IPL Using Expert System",
+        "year": 2018
+      }
+    ],
+    "scholars": [
+      {
+        "name": "Amitabha Bandyopadhyay",
+        "thesisTitle": "Study and Improvement of Software Quality using Data Mining Techniques"
+      },
+      {
+        "name": "Madhusudan Chakraborti",
+        "thesisTitle": "A Study of Reverse Conversion Algorithms for Signed-digit number systems"
+      },
+      {
+        "name": "Santanu Modak",
+        "thesisTitle": "A Computational Study of Sentiment Analysis from User Opinion"
+      },
+      {
+        "name": "Sanjib Mandal",
+        "thesisTitle": "Opinion Mining: A Study and New Dimension"
+      },
+      {
+        "name": "Sourabh Maitra",
+        "thesisTitle": "Study of Learning Management Systems in Semantic Web Framework working on Cloud Computing Environment"
       }
     ]
   }

@@ -4,19 +4,19 @@ export interface Education {
   period: string;
 }
 
-export interface Award {
-  awardee: string;
-  details: string;
-}
-
 export interface BookChapter {
   title: string;
   details: string;
 }
 
-export interface Reference {
+export interface PhdScholar {
   name: string;
-  details: string;
+  image?: string;
+  thesisTitle: string;
+}
+
+export interface PhdAwardee extends PhdScholar {
+  year: number;
 }
 
 export interface ResumeBasics {
@@ -31,28 +31,26 @@ export interface ResumeBasics {
 export interface Resume {
   basics: ResumeBasics;
   education: Education[];
-  interests: {
-    title: string;
-    description: string;
+  researchInterests: string[];
+  guided: {
+    scholars: PhdScholar[];
+    awardees: PhdAwardee[];
   };
-  awards: Award[];
-  references: Reference[];
-  publications: {
-    bookChapters: BookChapter[];
-  };
-  [key: string]: any;
 }
 
 export interface Publication {
   title: string;
   authors: string[];
-  journal?: string;
-  conference?: string;
   year: number;
   url: string;
   doi?: string;
-  publishedIn?: string;
-  image?: string;
-  imageHint?: string;
-  category?: string;
+}
+
+export interface ConferencePaper extends Publication {
+  conference: string;
+  category: string;
+}
+
+export interface JournalArticle extends Publication {
+  journal: string;
 }

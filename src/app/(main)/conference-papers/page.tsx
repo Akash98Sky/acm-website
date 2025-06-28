@@ -21,12 +21,12 @@ import {
 } from '@/components/ui/card';
 import { ExternalLink, Search } from 'lucide-react';
 import papers from '@/data/conference-papers.json';
-import type { Publication } from '@/lib/types';
+import type { ConferencePaper } from '@/lib/types';
 
 const ITEMS_PER_PAGE = 5;
 
 export default function ConferencePapersPage() {
-  const typedPapers: Publication[] = useMemo(() => [...papers].sort((a, b) => b.year - a.year), []);
+  const typedPapers: ConferencePaper[] = useMemo(() => [...papers].sort((a, b) => b.year - a.year), []);
 
   const categories = useMemo(() => {
     const allCategories = typedPapers.map(paper => paper.category).filter(Boolean);

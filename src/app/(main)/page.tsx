@@ -4,9 +4,10 @@ import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { Award, GraduationCap } from 'lucide-react';
 import type { ComponentType } from 'react';
+import type { BookChapter, Resume } from '@/lib/types';
 
-import type { Resume } from '@/lib/types';
 import resumeData from '@/data/resume.json';
+import bookChaptersData from '@/data/book-chapters.json';
 
 
 const ListItem = ({ primary, secondary, icon: Icon }: { primary: string; secondary: string; icon?: ComponentType<{ className?: string }> }) => (
@@ -31,6 +32,7 @@ const Section = ({ title, icon: Icon, children }: { title: string, icon?: React.
 
 export default function HomePage() {
   const resume: Resume = resumeData;
+  const bookChapters: BookChapter[] = bookChaptersData;
 
   return (
     <div className="max-w-4xl mx-auto space-y-12">
@@ -63,10 +65,10 @@ export default function HomePage() {
             ))}
           </div>
         </Section>
-        
-        <Section title={resume.interests.title}>
+
+        <Section title="Research Interests">
           <div className="flex flex-wrap gap-2">
-            {resume.interests.description.split(', ').map((interest, i) => (
+            {resume.researchInterests.map((interest, i) => (
               <Badge key={i} variant="secondary" className="text-base">{interest.replace('.', '')}</Badge>
             ))}
           </div>
@@ -75,23 +77,23 @@ export default function HomePage() {
 
       <Section title="PhD Awardees">
         <div>
-          {resume.awards.map((award, i) => (
-            <ListItem key={i} primary={award.awardee} secondary={award.details} icon={Award} />
+          {resume.guided.awardees.map((awardee, i) => (
+            <ListItem key={i} primary={awardee.name} secondary={awardee.thesisTitle} icon={Award} />
           ))}
         </div>
       </Section>
 
       <Section title="PhD Scholars">
-          <div>
-          {resume.references.map((scholar, i) => (
-            <ListItem key={i} primary={scholar.name} secondary={scholar.details} icon={GraduationCap} />
+        <div>
+          {resume.guided.scholars.map((scholar, i) => (
+            <ListItem key={i} primary={scholar.name} secondary={scholar.thesisTitle} icon={GraduationCap} />
           ))}
         </div>
       </Section>
 
       <Section title="Book Chapters">
         <div className="grid md:grid-cols-2 gap-6">
-          {resume.publications.bookChapters.map((chapter, i) => (
+          {bookChapters.map((chapter, i) => (
             <Card key={i} className="h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg font-semibold leading-tight">
