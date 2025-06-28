@@ -1,4 +1,3 @@
-
 {
   "basics": {
     "name": "Abhoy Chand Mondal",
@@ -71,28 +70,47 @@
         "name": "Pabitra Kumar De",
         "thesisTitle": "Studies on Multi Criteria Optimum Computation in IPL Using Expert System",
         "year": 2018
+      },
+      {
+        "name": "Madhusudan Chakraborti",
+        "thesisTitle": "A Study of Reverse Conversion Algorithms for Signed-digit number systems",
+        "year": 2019
+      },
+      {
+        "name": "Amitabha Bandyopadhyay",
+        "thesisTitle": "Study and Improvement of Software Quality using Data Mining Techniques",
+        "year": 2022
+      },
+      {
+        "name": "Santanu Modak",
+        "thesisTitle": "A Computational Study of Sentiment Analysis from User Opinion",
+        "year": 2022
       }
     ],
     "scholars": [
       {
-        "name": "Amitabha Bandyopadhyay",
-        "thesisTitle": "Study and Improvement of Software Quality using Data Mining Techniques"
+        "name": "Sumanta Dawn",
+        "thesisTitle": "Automatic Recognition of Offline OLCHIKI Script"
       },
       {
-        "name": "Madhusudan Chakraborti",
-        "thesisTitle": "A Study of Reverse Conversion Algorithms for Signed-digit number systems"
+        "name": "Saikat Banerjee",
+        "thesisTitle": "Machine Learning Based Prediction system Towards Agriculture"
       },
       {
-        "name": "Santanu Modak",
-        "thesisTitle": "A Computational Study of Sentiment Analysis from User Opinion"
+        "name": "SK Anamul Hoda",
+        "thesisTitle": "Studies on detection of human disease using Multi-criteria decision-making and machine learning"
       },
       {
-        "name": "Sanjib Mandal",
-        "thesisTitle": "Opinion Mining: A Study and New Dimension"
+        "name": "Dipankar Chatterjee",
+        "thesisTitle": "Studies on Reliability as a service in IOT environment"
       },
       {
-        "name": "Sourabh Maitra",
-        "thesisTitle": "Study of Learning Management Systems in Semantic Web Framework working on Cloud Computing Environment"
+        "name": "Sonali Mondal Das",
+        "thesisTitle": "Studies on detection of Cancer using Machine Learning algorithm"
+      },
+      {
+        "name": "Joyeta Chandra",
+        "thesisTitle": "Studies of Stock Market based Sentiment Analysis using Machine Learning"
       }
     ]
   }

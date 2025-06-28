@@ -43,3 +43,8 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+
+# scripts transpiled by tsc
+/scripts/dist/**
+/scripts/*.js
+/scripts/*.d.ts
