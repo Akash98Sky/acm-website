@@ -198,25 +198,17 @@ async function extractResumeData(pdfText: string, outputPath: string) {
 }
 
 async function extractBookChapters(pdfText: string, outputPath: string) {
-  const bookChapterHeaderIndex = pdfText.indexOf('Book Chapters');
-  const journalArticleHeaderIndex = pdfText.indexOf('Journal Articles', bookChapterHeaderIndex);
-  if (bookChapterHeaderIndex === -1) {
-    console.warn('No book chapters section found in the PDF.');
-    return;
-  }
-
   try {
     const prompt = `
       You are an expert at extracting structured data from academic publications.
       Carefully read the provided PDF content and extract all book chapters.
-      Do not include any conference papers or journal articles in this extraction.
       The output should be a JSON array where each object strictly follows this schema:
       ${zodToJsonSchema(BookChapterSchema)}
       Ensure the JSON output is valid and strictly adheres to the schema.
       If a field is not found for a chapter, omit it from that chapter's object.
       
       PDF Content:
-      ${pdfText.slice(bookChapterHeaderIndex, journalArticleHeaderIndex !== -1 ? journalArticleHeaderIndex : undefined)}
+      ${pdfText}
     `;
 
     const response = await ai.generate({
@@ -249,7 +241,6 @@ async function extractJournalArticles(pdfText: string, outputPath: string) {
     const prompt = `
       You are an expert at extracting structured data from academic publications.
       Carefully read the provided PDF content and extract all journal articles.
-      Do not include any book chapters or conference papers in the output.
       The output should be a JSON array where each object strictly follows this schema:
       ${zodToJsonSchema(JournalArticleSchema)}
       Ensure the JSON output is valid and strictly adheres to the schema.
@@ -291,7 +282,6 @@ async function extractConferencePapers(pdfText: string, outputPath: string) {
     const prompt = `
       You are an expert at extracting structured data from academic publications.
       Carefully read the provided PDF content and extract all conference papers.
-      Do not include any book chapters or journal articles in the output.
       The output should be a JSON array where each object strictly follows this schema:
       ${zodToJsonSchema(ConferencePaperSchema)}
       Ensure the JSON output is valid and strictly adheres to the schema.
@@ -332,8 +322,8 @@ async function extract() {
   const pdfText = await extractTextFromPDF(pdfFilePath);
   await extractResumeData(pdfText, resumeDataFilePath);
   await extractBookChapters(pdfText, bookChaptersDataFilePath);
-  await extractConferencePapers(pdfText, conferencePapersDataFilePath);
   await extractJournalArticles(pdfText, journalArticlesDataFilePath);
+  await extractConferencePapers(pdfText, conferencePapersDataFilePath);
 }
 
 extract()
