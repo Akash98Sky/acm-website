@@ -19,7 +19,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { ExternalLink, Search } from 'lucide-react';
+import { BanIcon, ExternalLink, Search } from 'lucide-react';
 import papers from '@/data/conference-papers.json';
 import type { ConferencePaper } from '@/lib/types';
 
@@ -209,9 +209,10 @@ export default function ConferencePapersPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardFooter className="gap-4">
-                  <Button asChild>
+                  <Button asChild disabled={!paper.url} variant={paper.url ? 'default' : 'outline'}>
                     <a href={paper.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
+                      {paper.url ? <ExternalLink className="mr-2 h-4 w-4" /> :
+                        <BanIcon className="mr-1 h-4 w-4" />}
                       View Paper
                     </a>
                   </Button>

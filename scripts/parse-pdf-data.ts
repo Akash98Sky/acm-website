@@ -7,6 +7,7 @@ import z from 'zod';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 import { configDotenv } from 'dotenv';
 import { tavily } from "@tavily/core";
+import Fuse from 'fuse.js';
 
 configDotenv();
 
@@ -125,15 +126,25 @@ async function updatePublicationUrls<T extends z.infer<typeof PublicationSchema>
     const response = await tavilyClient.search(
       slug,
       {
-        maxResults: 3,
-        safeSearch: 'strict',
+        maxResults: 5,
         locale: 'en',
         timeout: 3000, // 3 seconds timeout
       }
     );
+    const fuse = new Fuse(
+      response.results || [], {
+      keys: ['title', 'content'],
+      isCaseSensitive: false,
+      threshold: 0.6, // Adjust threshold for fuzzy matching
+      minMatchCharLength: 3, // Minimum characters to match
+    });
 
     return response.results?.find(result => {
-      return allowedHosts.some(host => result.url.includes(host));
+      return (
+        result.score > 0.6 ||
+        publication.authors.some(author => fuse.search(author).length > 0)
+      ) &&
+        allowedHosts.some(host => result.url.includes(host));
     })?.url;
   };
 

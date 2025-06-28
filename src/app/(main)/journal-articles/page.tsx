@@ -22,7 +22,7 @@ import {
 } from '@/components/ui/card';
 import journalArticles from '@/data/journal-articles.json';
 import type { JournalArticle } from '@/lib/types';
-import { ExternalLink, Search } from 'lucide-react';
+import { ExternalLink, Search, BanIcon } from 'lucide-react';
 
 const ITEMS_PER_PAGE = 5;
 
@@ -79,14 +79,14 @@ export default function JournalArticlesPage() {
     }
 
     if (currentPage < totalPages - (pageRangeDisplayed + 1)) {
-        pageNumbers.push('...');
+      pageNumbers.push('...');
     }
 
     // Always show the last page
     if (totalPages > 1) {
-        pageNumbers.push(totalPages);
+      pageNumbers.push(totalPages);
     }
-    
+
     const uniquePageNumbers = [...new Set(pageNumbers)];
 
 
@@ -128,14 +128,14 @@ export default function JournalArticlesPage() {
                 e.preventDefault();
                 handlePageChange(currentPage + 1);
               }}
-               className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
+              className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
             />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
     );
   };
-  
+
   return (
     <div className="max-w-4xl mx-auto space-y-12 py-8">
       <header className="space-y-2">
@@ -158,7 +158,7 @@ export default function JournalArticlesPage() {
           }}
         />
       </div>
-      
+
       <section className="space-y-4">
         <h2 className="text-2xl font-bold">Recent Publications</h2>
         <div className="space-y-6">
@@ -184,9 +184,10 @@ export default function JournalArticlesPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardFooter className="gap-4">
-                  <Button asChild>
+                  <Button asChild variant={item.url ? 'default' : 'outline'} disabled={!item.url}>
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
+                      {item.url ? <ExternalLink className="mr-2 h-4 w-4" /> :
+                        <BanIcon className="mr-1 h-4 w-4" />}
                       Read Article
                     </a>
                   </Button>

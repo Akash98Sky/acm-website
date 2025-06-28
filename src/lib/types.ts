@@ -42,7 +42,7 @@ export interface Publication {
   title: string;
   authors: string[];
   year: number;
-  url: string;
+  url?: string;
   doi?: string;
 }
 
