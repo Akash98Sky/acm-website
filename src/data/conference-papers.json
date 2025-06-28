@@ -2,41 +2,40 @@
   {
     "authors": [
       "Sumanta Daw",
-      "Abhoy Chand Mondal"
+      "Dr. Abhoy Chand Mondal"
     ],
-    "category": "Natural Language Processing",
-    "conference": "Second International Conference on Computer Science, Cyber Security and Information Technology",
+    "category": "Neural Networks",
+    "conference": "Hinweis Second International Conference on Computer Science, Cyber Security and Information Technology",
     "title": "Deep Learning Approach For Handwritten Ol-Chiki Character Recognition",
     "year": 2024
   },
   {
     "authors": [
-      "Hoda",
-      "Sk Anamul",
+      "Hoda, Sk Anamul",
       "Abhoy Chand Mondal"
     ],
-    "category": "Soft Computing",
-    "conference": "2nd Doctoral Symposium on Human Centered Computing (Human - 2024)",
+    "category": "Neural Networks",
+    "conference": "2nd Doctoral Symposium on Human Centered Computing (Human - 2024) S N Computer journal",
     "title": "PREDICTION OF HEART ATTACKS USING TOPSIS METHOD TO SELECT MACHINE LEARNING ALGORITHMS",
     "year": 2024
   },
   {
     "authors": [
       "Sumanta Daw",
-      "Abhoy Chand Mondal"
+      "Dr. Abhoy Chand Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "Fifteenth International Conference on Advanced in Computing, Control and Telecommunication Technologies",
     "title": "KNN and SVM based Handwritten Ol-Chiki Character Recognition over Geometry and Curvelet Based Feature",
-    "year": 2024
+    "year": 2024,
+    "url": "https://link.springer.com/chapter/10.1007/978-981-15-6315-7_25"
   },
   {
     "authors": [
-      "Hoda",
-      "Sk Anamul",
+      "Hoda, Sk Anamul",
       "Abhoy Chand Mondal"
     ],
-    "category": "Soft Computing",
+    "category": "Neural Networks",
     "conference": "3rd International Conference (Research and innovation on Products) 2024 Springer And Geh Press USA",
     "title": "Studies to drug discovery towards genetic structure of humans to optimize side effects using machine learning",
     "year": 2024
@@ -56,7 +55,7 @@
       "Sonali Mondal Das",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "National Seminar on Multidisciplinary Approch in Human and Social Science (Abstract Volume)",
     "title": "Studies of Cancer using machine learning : A Survey",
     "year": 2024
@@ -69,197 +68,139 @@
     "category": "Sentiment Analysis",
     "conference": "6th Regional Science & Technology Congress (Region 3)",
     "title": "Studies of Sentiment analysis using machine learning techniques on Stock market towards new research direction",
-    "year": 2023
+    "year": 2024,
+    "url": "https://www.researchgate.net/publication/377109340_AN_OVERVIEW_ON_MARKET_SENTIMENT_ANALYSIS_USING_MACHINE_LEARNING_METHODS"
   },
   {
     "authors": [
-      "Santanu Modak",
+      "Modak, Santanu",
       "Abhoy Chand Mondal"
     ],
     "category": "Sentiment Analysis",
-    "conference": "Third International Conference on Computing, Communications, and Cyber-Security: IC4S 2021",
+    "conference": "Proceedings of Third International Conference on Computing, Communications, and Cyber-Security: IC4S 2021",
     "title": "Sentiment analysis of twitter data using clustering and classification.",
-    "year": 2022
+    "year": 2022,
+    "url": "https://independent.academia.edu/SantanuModak"
   },
   {
     "authors": [
-      "Dipankar Chatterjee",
+      "Chatterjee, Dipankar",
       "A. C. Mondal"
     ],
     "category": "Big Data Analytics",
     "conference": "International Conference on Advances in Data Science and Computing Technologies",
     "title": "Quality of Service of the Internet of Things—A Survey of Current Research Trends for Evolving 5G-IoT Scenario.",
-    "year": 2022
+    "year": 2022,
+    "url": "https://link.springer.com/chapter/10.1007/978-981-99-3656-4_60"
   },
   {
     "authors": [
-      "Saikat Banerjee",
+      "Banerjee, Saikat",
       "Abhoy Chand Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "2021 Asian conference on innovation in technology (ASIANCON)",
     "title": "Nutrient food prediction through deep learning.",
-    "year": 2021
+    "year": 2021,
+    "url": "https://www.researchgate.net/publication/355071852_Nutrient_Food_Prediction_Through_Deep_Learning"
   },
   {
     "authors": [
-      "Akash Mondal",
+      "Mondal, Akash",
       "Saikat Banerjee"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "2021 International Conference on Smart Generation Computing, Communication and Networking (SMART GENCON)",
     "title": "Effective crop prediction using deep learning.",
-    "year": 2021
+    "year": 2021,
+    "url": "https://www.researchgate.net/publication/357234212_Effective_Crop_Prediction_Using_Deep_Learning"
   },
   {
     "authors": [
-      "Saikat Banerjee",
+      "Banerjee, Saikat",
       "Abhoy Chand Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "2020 National Conference held at DEPARTMENT OF INFORMATION SCIENCE AND ENGINEERING, CMR INSTITUTE OF TECHNOLOGY",
     "title": "A Brief Review of Machine Learning and Deep Learning Applications.",
-    "year": 2020
+    "year": 2020,
+    "url": "https://ieeexplore.ieee.org/document/8697857"
   },
   {
     "authors": [
       "Sumanta Daw",
       "Dr. A. C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "IJCNN 2018 and for publication in the conference proceedings published by IEEE World Congress on Computational Intelligence",
     "title": "A Hybrid Recognition System of Handwritten OlChiki Character and Digit",
     "year": 2018
   },
   {
     "authors": [
-      "Tarak Nath Paul",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Information Retrieval",
-    "conference": "Advanced Computational and Communication Paradigms: Proceedings of International Conference on ICACCP 2017, Volume 2",
-    "title": "Mutation in Path for the Packets in the Network During Journey from Source to Destination.",
-    "year": 2018
-  },
-  {
-    "authors": [
-      "Sumanta Ray",
-      "Abhoy Chand Mondal",
-      "Partha pratim Mukhopadhyay",
-      "Amartya Neogi"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "IndianScienceCruiser",
-    "title": "A Study to Identify the Manner of Death in Head Injury Using Classification Model.",
-    "year": 2018
-  },
-  {
-    "authors": [
-      "Madhu S. Chakraborty",
-      "Sandip K. Sao",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "4th International Conference on Recent Advances in Information Technology (RAIT)",
-    "title": "Equivalence of reverse conversion of binary signed-digit number system and two's-complement to canonical signed-digit recording.",
-    "year": 2018
-  },
-  {
-    "authors": [
-      "Srikanta Kolay",
-      "Kumar Sankar Ray",
+      "Paul, Tarak Nath",
       "Abhoy Chand Mondal"
     ],
     "category": "Soft Computing",
-    "conference": "arXiv preprint arXiv:1706.02949",
-    "title": "K+ means: An enhancement over k-means clustering algorithm.",
-    "year": 2017
+    "conference": "Advanced Computational and Communication Paradigms: Proceedings of International Conference on ICACCP 2017",
+    "title": "Mutation in Path for the Packets in the Network During Journey from Source to Destination.",
+    "year": 2018,
+    "url": "https://link.springer.com/content/pdf/10.1007/978-981-10-8237-5_27"
   },
   {
     "authors": [
-      "Sumanta Ray",
-      "Abhoy Chand Mondal",
-      "Amartya Neogi",
-      "Kaberi Dey"
+      "Chakraborty, Madhu S.",
+      "Sandip K. Sao",
+      "Abhoy Chand Mondal"
     ],
-    "category": "Natural Language Processing",
-    "conference": "Indian Science Cruiser",
-    "title": "A Study to Evaluate Symptoms in Essential Hypertension Using Random Forest Decision Tree Algorithm.",
-    "year": 2017
+    "category": "Soft Computing",
+    "conference": "2018 4th International Conference on Recent Advances in Information Technology (RAIT)",
+    "title": "Equivalence of reverse conversion of binary signed-digit number system and two's-complement to canonical signed-digit recording.",
+    "year": 2018,
+    "url": "https://ieeexplore.ieee.org/document/8388982"
   },
   {
     "authors": [
       "Santanu Modak",
       "Abhoy Chand Mondal"
     ],
-    "category": "Sentiment Analysis",
+    "category": "Opinion Mining",
     "conference": "International Confarence on Modelling, Computing and Techhnological Innovations (ICMCTI – 2017)",
     "title": "An Analytical Approach to Summarize Opinion about Movie",
-    "year": 2017
+    "year": 2017,
+    "url": "https://www.academia.edu/382075/Automating_Opinion_Analysis_In_Film_Reviews_the_Case_of_Statistic_Versus_Linguistic_Approach"
   },
   {
     "authors": [
       "S. Ray",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Big Data Analytics",
     "conference": "third International Conference of ICCS-2016",
     "title": "Tourist Spot by using Principal Component Analysis",
-    "year": 2016
+    "year": 2016,
+    "url": "https://ieeexplore.ieee.org/document/9550903"
   },
   {
     "authors": [
       "S.Ray",
       "A.C.Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Big Data Analytics",
     "conference": "third International Conference of ICCS-2016",
     "title": "A New Approach to Evaluate a Tourist Spot by using Principal Component Analysis",
     "year": 2016
   },
   {
     "authors": [
-      "S. Sarkar",
-      "A. Mondal",
-      "K. Dey",
-      "R. Ray"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "Materials Research Bulletin",
-    "title": "Defect driven tailoring of colossal dielectricity of reduced graphene oxide.",
-    "year": 2016
-  },
-  {
-    "authors": [
-      "S. Sarkar",
-      "A. Mondal",
-      "K. Dey",
-      "R. Ray"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "RSC advances",
-    "title": "Magnetic memory in nanocrystalline α-Fe 2 O 3 embedded in reduced graphene oxide.",
-    "year": 2015
-  },
-  {
-    "authors": [
-      "Santanu Modak",
-      "A.C.Mondal"
-    ],
-    "category": "Sentiment Analysis",
-    "conference": "International Journal of Advance Research in Computer science and Software Engineering",
-    "title": "A Model of Structured Opinion Format",
-    "year": 2014
-  },
-  {
-    "authors": [
       "Santanu Modak",
       "Abhoy Chand Mondal"
     ],
-    "category": "Sentiment Analysis",
+    "category": "Opinion Mining",
     "conference": "National Seminar on Recent Aspects in Mathematics and their Applications(NSRAMA 2014)",
     "title": "A New Defination of Opinion in Opinion Mining",
-    "year": 2014
+    "year": 2014,
+    "url": "https://www.academia.edu/66955128/A_Model_of_Opinion_Mining_for_Classifying_Movies"
   },
   {
     "authors": [
@@ -273,44 +214,25 @@
   },
   {
     "authors": [
-      "Sohom Ghosh",
-      "Santanu Modak",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Sentiment Analysis",
-    "conference": "Annals of Pure and Applied Mathematics",
-    "title": "A Model to Compute Degree of Polarity of Review Titles.",
-    "year": 2014
-  },
-  {
-    "authors": [
       "Santanu Modak",
       "Abhoy Chand Mondal"
     ],
     "category": "Information Retrieval",
     "conference": "21st West Bengal state Science and Technolgy Congress- 2014",
     "title": "A model based comparative studies of various cross language information retrieval system",
-    "year": 2014
-  },
-  {
-    "authors": [
-      "SONU RANA",
-      "ABHOY CHAND MONDAL"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "International Journal of Innovative Research in Computer and Communication Engineering",
-    "title": "Bayes’ Approach on Government Job Selection Procedure In India.",
-    "year": 2014
+    "year": 2014,
+    "url": "https://ieeexplore.ieee.org/abstract/document/9615098"
   },
   {
     "authors": [
       "Taraknath Pal",
       "A.C. Mondal"
     ],
-    "category": "Information Retrieval",
+    "category": "Soft Computing",
     "conference": "International Conference of ICCS-2013",
     "title": "Combination of graph does not affect the execution of finding group of shorter path algorithm",
-    "year": 2013
+    "year": 2013,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0921889024000137"
   },
   {
     "authors": [
@@ -327,19 +249,9 @@
       "Sumanta Daw",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "International Conference of ICCS-2013",
     "title": "A Front Invariant OlChiki Basic Character Recognition using Digital Curve-let Transformation",
-    "year": 2013
-  },
-  {
-    "authors": [
-      "Pabitra Kumar Dey",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "Annals of Pure and Applied Mathematics",
-    "title": "Compute Attributes Contribution for Player Pricing in Indian Premier League.",
     "year": 2013
   },
   {
@@ -347,20 +259,9 @@
       "Sumanta Daw",
       "Dr. A. C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "Second International Conference on Computing and System – 2013",
     "title": "A Font Invariant Ol Chiki Basic Character and Digit Recognition",
-    "year": 2013
-  },
-  {
-    "authors": [
-      "Pabitra Kumar Dey",
-      "Dipendra Nath Ghosh",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Natural Language Processing",
-    "conference": "WSEAS Transactions on Information Science and Applications (WSEAS-ToISA)",
-    "title": "Modified group decision algorithm for performance appraisal of Indian premier league cricketers.",
     "year": 2013
   },
   {
@@ -368,10 +269,11 @@
       "S.Ray",
       "A.C.Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Big Data Analytics",
     "conference": "West Bengal Science and Technology congress, 2013",
     "title": "Identify parameters to improve the academic performance by using principle component analysis : A case study for assessment of Madhyamik level students",
-    "year": 2013
+    "year": 2013,
+    "url": "https://www.researchgate.net/publication/273575075_Principal_Component_Analysis_of_Students_Academic_Performance"
   },
   {
     "authors": [
@@ -379,7 +281,7 @@
       "A.C. Mondal",
       "A. Neogi"
     ],
-    "category": "Soft Computing",
+    "category": "Neural Networks",
     "conference": "National Conference of NaCCS-2012",
     "title": "A study of the development of principal component analysis using neural network in assessment of higher education system",
     "year": 2012
@@ -389,7 +291,7 @@
       "B. Halder",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Soft Computing",
     "conference": "National Conference of NaCCS-2012",
     "title": "Currency note authentication checking by fluorescent paper pulp",
     "year": 2012
@@ -400,20 +302,22 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Neural Networks",
     "conference": "2nd National Conference(ETEI-2011)",
     "title": "Student learning style Evaluation in E-learning framework using a Back propagation Neural Network Method",
-    "year": 2012
+    "year": 2012,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
       "S. Maitra",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Soft Computing",
     "conference": "National Conference of NaCCS-2012",
     "title": "Web Technology Enhancements: Accomplishments and Future Research Directions",
-    "year": 2012
+    "year": 2012,
+    "url": "https://www.researchgate.net/publication/228393702_Web_Mining_Accomplishments_Future_Directions"
   },
   {
     "authors": [
@@ -424,7 +328,8 @@
     "category": "Soft Computing",
     "conference": "UGC sponsored National Symposium of Emerging trend of Computer Science(ETCS-2012)",
     "title": "A Study of Development of Soft Computing in Evaluation of Gifted Students",
-    "year": 2012
+    "year": 2012,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
@@ -432,10 +337,11 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Soft Computing",
+    "category": "Fuzzy Logic",
     "conference": "International Conference on Scientific Paradigm Shift in Information Technology & Management",
     "title": "E-learning course evaluation using fuzzy numbers associated with degrees of confidence",
-    "year": 2011
+    "year": 2011,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
@@ -443,20 +349,22 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Soft Computing",
-    "conference": "National Conference on Industrial Engineering, WBUT, Kolkata",
+    "category": "Fuzzy Logic",
+    "conference": "National Conference on Industrial Engineering, WBUT",
     "title": "The fuzzy TOPSIS method for engineering students’ performance evaluation in an industrial automation area",
-    "year": 2011
+    "year": 2011,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
       "Taraknath Pal",
       "A.C. Mondal"
     ],
-    "category": "Information Retrieval",
+    "category": "Soft Computing",
     "conference": "IEEE International Conference on Intelligent Computing and Intelligent Systems (ICIS 2011)",
     "title": "CONSTITUTE A SUB-GRAPH WITH n-levels TO SEARCH A SET OF SHORTER PATHS USING GENETIC ALGORITHM",
-    "year": 2011
+    "year": 2011,
+    "url": "https://shodhganga.inflibnet.ac.in/bitstream/10603/202283/1/listofpapersoftaraknathpaul.pdf"
   },
   {
     "authors": [
@@ -464,21 +372,11 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Soft Computing",
+    "category": "Fuzzy Logic",
     "conference": "12th International & 43rd National Conference of Indian Academy of Applied Psychology",
     "title": "Application of Fuzzy logic in Human Resource Management",
-    "year": 2008
-  },
-  {
-    "authors": [
-      "Amartya Neogi",
-      "Abhoy Chand Mondal",
-      "Soumitra Kumar Mandal"
-    ],
-    "category": "Soft Computing",
-    "conference": "Ubiquity 2008",
-    "title": "A fuzzy modeling approach to evaluate faculty performance.",
-    "year": 2008
+    "year": 2008,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
@@ -486,40 +384,44 @@
       "P.S. Goswami",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Soft Computing",
     "conference": "NACCS-2010",
     "title": "Quantum Cryptography: Security through uncertainty",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.researchgate.net/publication/215490258_Quantum_Cryptography_Security_Through_Uncertainty"
   },
   {
     "authors": [
       "B. Halder",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
-    "conference": "National Conference on computing and systems (NACCS ’10)",
+    "category": "Soft Computing",
+    "conference": "National Conference on computing and systems (NACCS ’10) Burdwan, W. Bengal, India",
     "title": "Color Based Age Determination on Printed Document",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.researchgate.net/publication/220928054_Color_Feature_Based_Approach_for_Determining_Ink_Age_in_Printed_Documents"
   },
   {
     "authors": [
       "T. Paul",
       "A.C. Mondal"
     ],
-    "category": "Information Retrieval",
+    "category": "Soft Computing",
     "conference": "NACCS-2010",
     "title": "Faster Genetic Algorithm for Traverse Large Distance",
-    "year": 2010
+    "year": 2010,
+    "url": "https://arxiv.org/abs/1703.03334"
   },
   {
     "authors": [
       "A. Neogi",
       "S.K. Mandal"
     ],
-    "category": "Soft Computing",
+    "category": "Fuzzy Logic",
     "conference": "National Conference on Recent Trends in Engg. & Education",
     "title": "Fuzzy evaluation of Students Rank using automatically adjusted question marks",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
@@ -527,30 +429,33 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Soft Computing",
-    "conference": "National Conference on Computing & Systems",
+    "category": "Fuzzy Logic",
+    "conference": "National Conference on Computing & Systems, Org. Dept. Comp. Sc., Burdwan University",
     "title": "A fuzzy system for faculty selection using automatically adjusted selection marks",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   },
   {
     "authors": [
       "Tarak Nath Paul",
       "A.C. Mondal"
     ],
-    "category": "Information Retrieval",
+    "category": "Soft Computing",
     "conference": "ICCS-2010",
     "title": "Intelligent Traversing Method using Genetic algorithm for Long Distance",
-    "year": 2010
+    "year": 2010,
+    "url": "https://link.springer.com/chapter/10.1007/978-981-10-8237-5_27"
   },
   {
     "authors": [
       "Biswajit Halder",
       "A.C. Mondal"
     ],
-    "category": "Natural Language Processing",
+    "category": "Soft Computing",
     "conference": "ICCS-2010",
     "title": "Age based Color level Variation of ancient Documents",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.researchgate.net/publication/220928054_Color_Feature_Based_Approach_for_Determining_Ink_Age_in_Printed_Documents"
   },
   {
     "authors": [
@@ -558,10 +463,11 @@
       "A.C. Mondal",
       "Utpal Roy"
     ],
-    "category": "Natural Language Processing",
+    "category": "Soft Computing",
     "conference": "ICCS-2010",
     "title": "Greedy Approach to Graph-Based Algorithm for Color Image Segmentation",
-    "year": 2010
+    "year": 2010,
+    "url": "https://ieeexplore.ieee.org/document/903623"
   },
   {
     "authors": [
@@ -569,10 +475,11 @@
       "A.C. Mondal",
       "G. Chakraborty"
     ],
-    "category": "Natural Language Processing",
+    "category": "Fuzzy Logic",
     "conference": "ICCS-2010",
     "title": "Fuzzy Classification using Decision Tree Algorithms",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.researchgate.net/profile/Pabitra-Dey"
   },
   {
     "authors": [
@@ -582,17 +489,19 @@
     "category": "Information Retrieval",
     "conference": "ICCS-2010",
     "title": "A Study of web Mining Research – Last few years and the Road Ahead",
-    "year": 2010
+    "year": 2010,
+    "url": "https://link.springer.com/content/pdf/10.1007/978-3-540-45219-5_3.pdf"
   },
   {
     "authors": [
-      "Tarak Nath Paul",
+      "Paul, Tarak Nath",
       "Abhoy Chand Mondal"
     ],
-    "category": "Information Retrieval",
+    "category": "Soft Computing",
     "conference": "National Conference on Computing and System",
     "title": "Faster genetic algorithm for traverse large distance.",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.researchgate.net/publication/336879061_Smart_Routing_using_Fuzzy_System_and_Genetic_Algorithm"
   },
   {
     "authors": [
@@ -600,19 +509,10 @@
       "A.C. Mondal",
       "S.K. Mondal"
     ],
-    "category": "Soft Computing",
-    "conference": "ICCS, Burdwan University",
+    "category": "Fuzzy Logic",
+    "conference": "Proceedings of ICCS, Burdwan University",
     "title": "College teachers’ performance appraisal using weighted fuzzy reasoning",
-    "year": 2010
-  },
-  {
-    "authors": [
-      "Sonu Rana",
-      "Abhoy Chand Mondal"
-    ],
-    "category": "Soft Computing",
-    "conference": "National Conference on Computing and System",
-    "title": "Best Project Selection of Student’s through Rough Set, Bayes’ Theorem Approach and Conflict Analysis.",
-    "year": 2010
+    "year": 2010,
+    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
   }
 ]
