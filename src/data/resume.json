@@ -85,21 +85,24 @@
         "name": "Santanu Modak",
         "thesisTitle": "A Computational Study of Sentiment Analysis from User Opinion",
         "year": 2022
-      }
-    ],
-    "scholars": [
+      },
       {
         "name": "Sumanta Dawn",
-        "thesisTitle": "Automatic Recognition of Offline OLCHIKI Script"
+        "thesisTitle": "Automatic Recognition of Offline OLCHIKI Script",
+        "year": 2025
       },
       {
         "name": "Saikat Banerjee",
-        "thesisTitle": "Machine Learning Based Prediction system Towards Agriculture"
+        "thesisTitle": "Machine Learning Based Prediction system Towards Agriculture",
+        "year": 2025
       },
       {
         "name": "SK Anamul Hoda",
-        "thesisTitle": "Studies on detection of human disease using Multi-criteria decision-making and machine learning"
-      },
+        "thesisTitle": "Studies on detection of human disease using Multi-criteria decision-making and machine learning",
+        "year": 2025
+      }
+    ],
+    "scholars": [
       {
         "name": "Dipankar Chatterjee",
         "thesisTitle": "Studies on Reliability as a service in IOT environment"

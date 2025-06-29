@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - 'EMP_1965_AbhoyChandMondal.pdf'
-      - 'scripts/parse-pdf-data.ts'
 
 permissions:
   contents: write

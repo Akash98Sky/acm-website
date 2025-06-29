@@ -16,25 +16,6 @@ const ai = genkit({
   model: googleAI.model('gemini-2.5-flash'),
 });
 
-const ResumeSchema = z.object({
-  researchInterests: z.array(z.string()).describe('Research Interests'),
-  guided: z.object({
-    scholars: z.array(
-      z.object({
-        name: z.string(),
-        thesisTitle: z.string(),
-      })
-    ).describe('PhD Scholars'),
-    awardees: z.array(
-      z.object({
-        name: z.string(),
-        thesisTitle: z.string(),
-        year: z.number(),
-      })
-    ).describe('PhD Awardees'),
-  }),
-});
-
 const BookChapterSchema = z.object({
   title: z.string(),
   details: z.string(),
@@ -163,40 +144,6 @@ async function updatePublicationUrls<T extends z.infer<typeof PublicationSchema>
   return publications;
 }
 
-async function extractResumeData(pdfText: string, outputPath: string) {
-  try {
-    const prompt = `
-      You are an expert at extracting structured data from resumes.
-      Carefully read the provided PDF content and extract the resume information.
-      The output should be a JSON object strictly following this schema:
-      ${zodToJsonSchema(ResumeSchema)}
-      Ensure the JSON output is valid and strictly adheres to the schema.
-      If a field is not found in the PDF, omit it from the JSON output.
-      
-      PDF Content:
-      ${pdfText}
-    `;
-
-    const response = await ai.generate({
-      prompt,
-      output: { format: 'json', schema: ResumeSchema, contentType: 'application/json' },
-    });
-
-    const extractedData = response.output;
-
-    if (!extractedData || !ResumeSchema.safeParse(extractedData).success) {
-      throw new Error('Extracted data does not match the expected schema');
-    }
-
-    const existingData = fs.existsSync(outputPath) ? JSON.parse(fs.readFileSync(outputPath, 'utf-8')) : {};
-    const updatedData = { ...existingData, ...extractedData };
-    fs.writeFileSync(outputPath, JSON.stringify(updatedData, null, 2));
-    console.log(`Extracted resume data saved to ${outputPath}`);
-  } catch (error) {
-    console.error('Error extracting resume data:', error);
-  }
-}
-
 async function extractBookChapters(pdfText: string, outputPath: string) {
   try {
     const prompt = `
@@ -320,7 +267,6 @@ async function extract() {
   const journalArticlesDataFilePath = path.join('src', 'data', 'journal-articles.json');
 
   const pdfText = await extractTextFromPDF(pdfFilePath);
-  await extractResumeData(pdfText, resumeDataFilePath);
   await extractBookChapters(pdfText, bookChaptersDataFilePath);
   await extractJournalArticles(pdfText, journalArticlesDataFilePath);
   await extractConferencePapers(pdfText, conferencePapersDataFilePath);
