@@ -91,7 +91,7 @@ async function updatePublicationUrls<T extends z.infer<typeof PublicationSchema>
   const chunks: T[][] = [];
 
   for (let i = 0; i < publications.length; i += batchSize) {
-    chunks.push(publications.slice(i, i + batchSize));
+    chunks.push(publications.slice(i, i + batchSize).filter(pub => pub.year > 2020));
   }
 
   const extractFromExistingData = (publication: T): string | undefined => {
@@ -116,13 +116,13 @@ async function updatePublicationUrls<T extends z.infer<typeof PublicationSchema>
       response.results || [], {
       keys: ['title', 'content'],
       isCaseSensitive: false,
-      threshold: 0.6, // Adjust threshold for fuzzy matching
+      threshold: 0.8, // Adjust threshold for fuzzy matching
       minMatchCharLength: 3, // Minimum characters to match
     });
 
     return response.results?.find(result => {
       return (
-        result.score > 0.6 ||
+        result.score > 0.7 ||
         publication.authors.some(author => fuse.search(author).length > 0)
       ) &&
         allowedHosts.some(host => result.url.includes(host));
@@ -261,7 +261,6 @@ async function extractConferencePapers(pdfText: string, outputPath: string) {
 
 async function extract() {
   const pdfFilePath = path.join('EMP_1965_AbhoyChandMondal.pdf');
-  const resumeDataFilePath = path.join('src', 'data', 'resume.json');
   const bookChaptersDataFilePath = path.join('src', 'data', 'book-chapters.json');
   const conferencePapersDataFilePath = path.join('src', 'data', 'conference-papers.json');
   const journalArticlesDataFilePath = path.join('src', 'data', 'journal-articles.json');
