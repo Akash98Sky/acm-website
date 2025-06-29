@@ -27,8 +27,7 @@
     "category": "Neural Networks",
     "conference": "Fifteenth International Conference on Advanced in Computing, Control and Telecommunication Technologies",
     "title": "KNN and SVM based Handwritten Ol-Chiki Character Recognition over Geometry and Curvelet Based Feature",
-    "year": 2024,
-    "url": "https://link.springer.com/chapter/10.1007/978-981-15-6315-7_25"
+    "year": 2024
   },
   {
     "authors": [
@@ -68,8 +67,7 @@
     "category": "Sentiment Analysis",
     "conference": "6th Regional Science & Technology Congress (Region 3)",
     "title": "Studies of Sentiment analysis using machine learning techniques on Stock market towards new research direction",
-    "year": 2024,
-    "url": "https://www.researchgate.net/publication/377109340_AN_OVERVIEW_ON_MARKET_SENTIMENT_ANALYSIS_USING_MACHINE_LEARNING_METHODS"
+    "year": 2024
   },
   {
     "authors": [
@@ -79,8 +77,7 @@
     "category": "Sentiment Analysis",
     "conference": "Proceedings of Third International Conference on Computing, Communications, and Cyber-Security: IC4S 2021",
     "title": "Sentiment analysis of twitter data using clustering and classification.",
-    "year": 2022,
-    "url": "https://independent.academia.edu/SantanuModak"
+    "year": 2022
   },
   {
     "authors": [
@@ -123,8 +120,7 @@
     "category": "Neural Networks",
     "conference": "2020 National Conference held at DEPARTMENT OF INFORMATION SCIENCE AND ENGINEERING, CMR INSTITUTE OF TECHNOLOGY",
     "title": "A Brief Review of Machine Learning and Deep Learning Applications.",
-    "year": 2020,
-    "url": "https://ieeexplore.ieee.org/document/8697857"
+    "year": 2020
   },
   {
     "authors": [
@@ -167,8 +163,7 @@
     "category": "Opinion Mining",
     "conference": "International Confarence on Modelling, Computing and Techhnological Innovations (ICMCTI – 2017)",
     "title": "An Analytical Approach to Summarize Opinion about Movie",
-    "year": 2017,
-    "url": "https://www.academia.edu/382075/Automating_Opinion_Analysis_In_Film_Reviews_the_Case_of_Statistic_Versus_Linguistic_Approach"
+    "year": 2017
   },
   {
     "authors": [
@@ -178,8 +173,7 @@
     "category": "Big Data Analytics",
     "conference": "third International Conference of ICCS-2016",
     "title": "Tourist Spot by using Principal Component Analysis",
-    "year": 2016,
-    "url": "https://ieeexplore.ieee.org/document/9550903"
+    "year": 2016
   },
   {
     "authors": [
@@ -220,8 +214,7 @@
     "category": "Information Retrieval",
     "conference": "21st West Bengal state Science and Technolgy Congress- 2014",
     "title": "A model based comparative studies of various cross language information retrieval system",
-    "year": 2014,
-    "url": "https://ieeexplore.ieee.org/abstract/document/9615098"
+    "year": 2014
   },
   {
     "authors": [
@@ -231,8 +224,7 @@
     "category": "Soft Computing",
     "conference": "International Conference of ICCS-2013",
     "title": "Combination of graph does not affect the execution of finding group of shorter path algorithm",
-    "year": 2013,
-    "url": "https://www.sciencedirect.com/science/article/pii/S0921889024000137"
+    "year": 2013
   },
   {
     "authors": [
@@ -272,8 +264,7 @@
     "category": "Big Data Analytics",
     "conference": "West Bengal Science and Technology congress, 2013",
     "title": "Identify parameters to improve the academic performance by using principle component analysis : A case study for assessment of Madhyamik level students",
-    "year": 2013,
-    "url": "https://www.researchgate.net/publication/273575075_Principal_Component_Analysis_of_Students_Academic_Performance"
+    "year": 2013
   },
   {
     "authors": [
@@ -305,8 +296,7 @@
     "category": "Neural Networks",
     "conference": "2nd National Conference(ETEI-2011)",
     "title": "Student learning style Evaluation in E-learning framework using a Back propagation Neural Network Method",
-    "year": 2012,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2012
   },
   {
     "authors": [
@@ -328,8 +318,7 @@
     "category": "Soft Computing",
     "conference": "UGC sponsored National Symposium of Emerging trend of Computer Science(ETCS-2012)",
     "title": "A Study of Development of Soft Computing in Evaluation of Gifted Students",
-    "year": 2012,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2012
   },
   {
     "authors": [
@@ -340,8 +329,7 @@
     "category": "Fuzzy Logic",
     "conference": "International Conference on Scientific Paradigm Shift in Information Technology & Management",
     "title": "E-learning course evaluation using fuzzy numbers associated with degrees of confidence",
-    "year": 2011,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2011
   },
   {
     "authors": [
@@ -352,8 +340,7 @@
     "category": "Fuzzy Logic",
     "conference": "National Conference on Industrial Engineering, WBUT",
     "title": "The fuzzy TOPSIS method for engineering students’ performance evaluation in an industrial automation area",
-    "year": 2011,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2011
   },
   {
     "authors": [
@@ -375,8 +362,7 @@
     "category": "Fuzzy Logic",
     "conference": "12th International & 43rd National Conference of Indian Academy of Applied Psychology",
     "title": "Application of Fuzzy logic in Human Resource Management",
-    "year": 2008,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2008
   },
   {
     "authors": [
@@ -409,8 +395,7 @@
     "category": "Soft Computing",
     "conference": "NACCS-2010",
     "title": "Faster Genetic Algorithm for Traverse Large Distance",
-    "year": 2010,
-    "url": "https://arxiv.org/abs/1703.03334"
+    "year": 2010
   },
   {
     "authors": [
@@ -420,8 +405,7 @@
     "category": "Fuzzy Logic",
     "conference": "National Conference on Recent Trends in Engg. & Education",
     "title": "Fuzzy evaluation of Students Rank using automatically adjusted question marks",
-    "year": 2010,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2010
   },
   {
     "authors": [
@@ -432,8 +416,7 @@
     "category": "Fuzzy Logic",
     "conference": "National Conference on Computing & Systems, Org. Dept. Comp. Sc., Burdwan University",
     "title": "A fuzzy system for faculty selection using automatically adjusted selection marks",
-    "year": 2010,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2010
   },
   {
     "authors": [
@@ -466,8 +449,7 @@
     "category": "Soft Computing",
     "conference": "ICCS-2010",
     "title": "Greedy Approach to Graph-Based Algorithm for Color Image Segmentation",
-    "year": 2010,
-    "url": "https://ieeexplore.ieee.org/document/903623"
+    "year": 2010
   },
   {
     "authors": [
@@ -478,8 +460,7 @@
     "category": "Fuzzy Logic",
     "conference": "ICCS-2010",
     "title": "Fuzzy Classification using Decision Tree Algorithms",
-    "year": 2010,
-    "url": "https://www.researchgate.net/profile/Pabitra-Dey"
+    "year": 2010
   },
   {
     "authors": [
@@ -489,8 +470,7 @@
     "category": "Information Retrieval",
     "conference": "ICCS-2010",
     "title": "A Study of web Mining Research – Last few years and the Road Ahead",
-    "year": 2010,
-    "url": "https://link.springer.com/content/pdf/10.1007/978-3-540-45219-5_3.pdf"
+    "year": 2010
   },
   {
     "authors": [
@@ -512,7 +492,6 @@
     "category": "Fuzzy Logic",
     "conference": "Proceedings of ICCS, Burdwan University",
     "title": "College teachers’ performance appraisal using weighted fuzzy reasoning",
-    "year": 2010,
-    "url": "https://www.bcrecapc.ac.in/public/media/671draneogipublicationslistupdated-2022-amartya-neogi.pdf"
+    "year": 2010
   }
 ]
